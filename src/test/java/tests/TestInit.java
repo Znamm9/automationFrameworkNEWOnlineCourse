@@ -17,6 +17,8 @@ public class TestInit {
         }
     }
 
+
+
     @BeforeMethod
     public void setUp(){
         WebDriverManager.chromedriver().setup();
