@@ -23,7 +23,7 @@ public class TestSignUp extends TestInit{
         signUpPage.inputPass().sendKeys("1Qwertyqazwsxedc");
         signUpPage.inputPassAgain().sendKeys("1Qwertyqazwsxedc");
         signUpPage.signUpBtn().click();
-        sleep(5);
+        sleep(10);
 
         Assert.assertTrue(homePage.getMyAccountBtn());
     }
