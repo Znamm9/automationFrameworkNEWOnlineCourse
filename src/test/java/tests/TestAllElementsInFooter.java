@@ -4,13 +4,15 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
 
-public class CheckAllElementsInFooter extends TestInit {
+public class TestAllElementsInFooter extends TestInit {
 
     @Test
     public void checkAllBtnInFooter() {
         HomePage homePage = new HomePage(driver);
         homePage.navigate();
         homePage.getGotItBtn().click();
+
+        //TODO треба винести в окремий класс і перенести туди реалізацію методів homePage.getAboutUsBtn().isDisplayed() та інших
 
         Assert.assertTrue(homePage.getAboutUsBtn().isDisplayed());
         Assert.assertTrue(homePage.getContactUsBtn().isDisplayed());
