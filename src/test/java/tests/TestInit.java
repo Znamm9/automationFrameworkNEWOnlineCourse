@@ -7,6 +7,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class TestInit {
+
+
+    //TODO треба перенести всі методи в базовий клас і виключити TestInit
+
     WebDriver driver;
 
     public void sleep(int seconds){
