@@ -12,6 +12,8 @@ public class TestAllElementsInFooter extends TestInit {
         homePage.navigate();
         homePage.getGotItBtn().click();
 
+        //TODO треба винести в окремий класс і перенести туди реалізацію методів homePage.getAboutUsBtn().isDisplayed() та інших
+
         Assert.assertTrue(homePage.getAboutUsBtn().isDisplayed());
         Assert.assertTrue(homePage.getContactUsBtn().isDisplayed());
         Assert.assertTrue(homePage.getCareersBtn().isDisplayed());
