@@ -16,4 +16,11 @@ public class TestNavigateHomePage extends TestInit{
         Assert.assertTrue(homePage.getSearchInput().isDisplayed());
         Assert.assertTrue(driver.getTitle().contains("Food"));
     }
+
+    @Test
+    public void isHomeMarketingSeo(){
+        HomePage homePage = new HomePage(driver);
+        homePage.navigate();
+        Assert.assertTrue(homePage.findMarketingSeo());
+    }
 }
