@@ -10,6 +10,6 @@ public class SignInPage extends BasePage {
     }
 
     public WebElement getSignUpBtn() {
-        return getElementByXpath("");
+        return getElementByXpath("//a[contains(text(), 'Sign Up')]");
     }
 }

@@ -17,8 +17,6 @@ public class TestInit {
         }
     }
 
-
-
     @BeforeMethod
     public void setUp(){
         WebDriverManager.chromedriver().setup();
@@ -30,5 +28,4 @@ public class TestInit {
     public void after(){
         driver.quit();
     }
-
 }

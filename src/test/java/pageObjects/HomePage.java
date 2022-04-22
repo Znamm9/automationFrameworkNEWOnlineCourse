@@ -85,4 +85,8 @@ public class HomePage extends BasePage {
     public WebElement getRestaurantTerms() {
         return getElementByXpath("//a[text()= 'Restaurant Terms']");
     }
+
+    public boolean getMyAccountBtn() {
+        return getElementByXpath("//a[text()= 'My Account']").isDisplayed();
+    }
 }
