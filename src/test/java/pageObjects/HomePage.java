@@ -85,4 +85,25 @@ public class HomePage extends BasePage {
     public WebElement getRestaurantTerms() {
         return getElementByXpath("//a[text()= 'Restaurant Terms']");
     }
+
+    public WebElement getPictureAboveInput() {
+        return getElementByXpath("//section[@class='text-center landing-callout--image promo_text']");
+    }
+
+    public WebElement getTextPathnerWithUs() {
+        return getElementByXpath("//a[@class='partners-link ng-scope']");
+    }
+
+
+    public WebElement getImgCart() {
+        return getElementByXpath("//img[@alt='cart']");
+    }
+
+    public WebElement getTextLabel() {
+        return getElementByXpath("//label[text()= 'Delivery']");
+    }
+
+    public WebElement getTextTakeOut() {
+        return getElementByXpath("//label[text()='Takeout']");
+    }
 }
