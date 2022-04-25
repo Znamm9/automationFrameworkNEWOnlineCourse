@@ -106,4 +106,5 @@ public class HomePage extends BasePage {
     public WebElement getTextTakeOut() {
         return getElementByXpath("//label[text()='Takeout']");
     }
+
 }
