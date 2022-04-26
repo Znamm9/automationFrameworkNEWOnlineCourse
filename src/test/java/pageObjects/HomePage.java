@@ -5,7 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class HomePage extends BasePage {
-
+    public CareersPage getCareersPage() {
+        return new CareersPage(driver);
+    }
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -134,6 +136,7 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[text()= 'My Account']").isDisplayed();
     }
 
+<<<<<<< HEAD
     public boolean getAnnArborBtn() {return getElementByXpath("//a[text()= 'Ann Arbor, MI']").isDisplayed();}
 
     public boolean getDetroitBtn() {return getElementByXpath("//a[text()= 'Detroit, MI']").isDisplayed();}
@@ -143,5 +146,16 @@ public class HomePage extends BasePage {
     public boolean getGrandRapBtn() {return getElementByXpath("//a[text()= 'Grand Rapids, MI']").isDisplayed();}
 
     public boolean getKalamazooBtb() {return getElementByXpath("//a[text()= 'Kalamazoo, MI']").isDisplayed();}
+=======
+    public WebElement getAddressField() {
+        return driver.findElement(By.xpath("//input[@id='input-food-search']"));
+    }
+    public WebElement getFedBtn() {
+        return driver.findElement(By.xpath("//a[@id='find-restaurants']"));
+    }
+    public WebElement checkAndClosePopUpWindow() {
+        return driver.findElement(By.xpath("//a[@id='enter-address-btn']"));
+    }
+>>>>>>> origin
 }
 
