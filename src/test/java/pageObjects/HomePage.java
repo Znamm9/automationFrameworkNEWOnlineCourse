@@ -135,5 +135,15 @@ public class HomePage extends BasePage {
     public boolean getMyAccountBtn() {
         return getElementByXpath("//a[text()= 'My Account']").isDisplayed();
     }
+
+    public WebElement getAddressField() {
+        return driver.findElement(By.xpath("//input[@id='input-food-search']"));
+    }
+    public WebElement getFedBtn() {
+        return driver.findElement(By.xpath("//a[@id='find-restaurants']"));
+    }
+    public WebElement checkAndClosePopUpWindow() {
+        return driver.findElement(By.xpath("//a[@id='enter-address-btn']"));
+    }
 }
 
