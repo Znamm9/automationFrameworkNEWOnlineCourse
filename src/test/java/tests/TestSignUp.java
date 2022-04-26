@@ -13,7 +13,7 @@ public class TestSignUp extends TestInit{
         HomePage homePage = new HomePage(driver);
         homePage.navigate();
         homePage.getGotItBtn().click();
-        homePage.getSignInBtn().click();
+        homePage.getSignInBtn().click(); //123
 
         SignInPage signInPage = new SignInPage(driver);
         signInPage.getSignUpBtn().click();
