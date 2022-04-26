@@ -5,7 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class HomePage extends BasePage {
-
+    public CareersPage getCareersPage() {
+        return new CareersPage(driver);
+    }
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -86,6 +88,10 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[text()= 'Restaurant Terms']");
     }
 
+    public boolean getMyAccountBtn() {
+        return getElementByXpath("//a[text()= 'My Account']").isDisplayed();
+    }
+
     public WebElement getBerkeleyBtn() {
         return getElementByXpath("//a[text()= 'Berkeley, CA']");
     }
@@ -130,9 +136,51 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[text()= 'Santa Maria, CA']");
     }
 
-    public boolean getMyAccountBtn() {
-        return getElementByXpath("//a[text()= 'My Account']").isDisplayed();
+    public WebElement getDaytonaBtn() {
+        return getElementByXpath("//a[contains(text(), 'Daytona Beach, FL')]");
     }
+
+    public WebElement getFortLauderdaleBtn() {
+        return getElementByXpath("//a[contains(text(), 'Fort Lauderdale, FL')]");
+    }
+
+    public WebElement getGainesvilleBtn() {
+        return getElementByXpath("//a[contains(text(), 'Gainesville, FL')]");
+    }
+
+    public WebElement getJacksonvilleBtn() {
+        return getElementByXpath("//a[contains(text(), 'Jacksonville, FL')]");
+    }
+
+    public WebElement getMiamiBtn() {
+        return getElementByXpath("//a[contains(text(), 'Miami, FL')]");
+    }
+
+    public WebElement getOrlandoBtn() {
+        return getElementByXpath("//a[contains(text(), 'Orlando, FL')]");
+    }
+
+    public WebElement getPortBtn() {
+        return getElementByXpath("//a[contains(text(), 'Port St. Lucie, FL')]");
+    }
+
+    public WebElement getTallahasseeBtn() {
+        return getElementByXpath("//a[contains(text(), 'Tallahassee, FL')]");
+    }
+
+    public WebElement getTampaBtn() {
+        return getElementByXpath("//a[contains(text(), 'Tampa, FL')]");
+    }
+
+    public boolean getAnnArborBtn() {return getElementByXpath("//a[text()= 'Ann Arbor, MI']").isDisplayed();}
+
+    public boolean getDetroitBtn() {return getElementByXpath("//a[text()= 'Detroit, MI']").isDisplayed();}
+
+    public boolean getEastLansingBtn() {return getElementByXpath("//a[text()= 'East Lansing, MI']").isDisplayed();}
+
+    public boolean getGrandRapBtn() {return getElementByXpath("//a[text()= 'Grand Rapids, MI']").isDisplayed();}
+
+    public boolean getKalamazooBtb() {return getElementByXpath("//a[text()= 'Kalamazoo, MI']").isDisplayed();}
 
     public WebElement getAddressField() {
         return driver.findElement(By.xpath("//input[@id='input-food-search']"));
