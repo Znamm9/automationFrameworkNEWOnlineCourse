@@ -88,13 +88,10 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[text()= 'Restaurant Terms']");
     }
 
-<<<<<<< HEAD
     public boolean getMyAccountBtn() {
         return getElementByXpath("//a[text()= 'My Account']").isDisplayed();
     }
 
-=======
->>>>>>> 67e2653c89153ec3cdce2e20f39717e2d4a527ae
     public WebElement getBerkeleyBtn() {
         return getElementByXpath("//a[text()= 'Berkeley, CA']");
     }
@@ -139,7 +136,6 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[text()= 'Santa Maria, CA']");
     }
 
-<<<<<<< HEAD
     public WebElement getDaytonaBtn() {
         return getElementByXpath("//a[contains(text(), 'Daytona Beach, FL')]");
     }
@@ -174,10 +170,6 @@ public class HomePage extends BasePage {
 
     public WebElement getTampaBtn() {
         return getElementByXpath("//a[contains(text(), 'Tampa, FL')]");
-=======
-    public boolean getMyAccountBtn() {
-        return getElementByXpath("//a[text()= 'My Account']").isDisplayed();
->>>>>>> 67e2653c89153ec3cdce2e20f39717e2d4a527ae
     }
 
     public WebElement getAddressField() {
@@ -190,7 +182,4 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//a[@id='enter-address-btn']"));
     }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 67e2653c89153ec3cdce2e20f39717e2d4a527ae
