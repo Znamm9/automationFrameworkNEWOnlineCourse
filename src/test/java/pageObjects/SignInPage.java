@@ -12,4 +12,10 @@ public class SignInPage extends BasePage {
     public WebElement getSignUpBtn() {
         return getElementByXpath("//a[contains(text(), 'Sign Up')]");
     }
+    public WebElement signInBtn(){
+        return getElementByXpath("//button[@id='signin']");
+    }
+    public WebElement messageError(){
+        return getElementByXpath("//div[@id='email-validation-tag']");
+    }
 }
