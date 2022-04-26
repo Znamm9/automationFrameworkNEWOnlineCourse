@@ -13,11 +13,10 @@ public class checkTextRestaurantLosAngeles extends TestInit {
         homePage.navigate();
         homePage.getSignInBtn().click();
         SignInPage signInPage = new SignInPage(driver);
-        signInPage.closeModal();
         homePage.getGotItBtn().click();
-        signInPage.getEmailField().sendKeys("x-o-m@ukr.net");
-        signInPage.getPassword().sendKeys("qwer4152sj");
-        signInPage.getLoginBtn().click();
+        signInPage.getEmailInput().sendKeys("x-o-m@ukr.net");
+        signInPage.getPasswordInput().sendKeys("qwer4152sj");
+        signInPage.getSignBtn().click();
         sleep(3);
         homePage.getAddressField().sendKeys("Los Angeles");
         homePage.getFedBtn().click();

@@ -37,14 +37,15 @@ public class TestInit {
         driver.quit();
     }
 
-   int BASIC_TIME = 15;
+    int BASIC_TIME = 15;
 
-   public void waitTILLELelementContainsText(String locator, String text) {
-       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(BASIC_TIME));
-       wait.until(textToBePresentInElementLocated(By.xpath(locator), text));
+    public void waitTILLELelementContainsText(String locator, String text) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(BASIC_TIME));
+        wait.until(textToBePresentInElementLocated(By.xpath(locator), text));
     }
+
     public WebElement getElementByXpath(String locator) {
-       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(BASIC_TIME));
-       return wait.until(elementToBeClickable(By.xpath(locator)));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(BASIC_TIME));
+        return wait.until(elementToBeClickable(By.xpath(locator)));
     }
 }
