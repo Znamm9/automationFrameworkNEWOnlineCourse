@@ -11,7 +11,7 @@ public class TestCareers extends TestInit {
         homePage.navigate();
         homePage.getGotItBtn().click();
         homePage.getCareersBtn().click();
-        sleep(1);
+        sleep(3);
         homePage.getCareersPage().clickCreativeBtn();
         sleep(1);
         Assert.assertEquals(homePage.getCareersPage().getListApplyHereBtn().size(),2);
