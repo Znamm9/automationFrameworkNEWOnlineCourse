@@ -14,6 +14,7 @@ public class checkTextRestaurantLosAngeles extends TestInit {
         homePage.getSignInBtn().click();
         SignInPage signInPage = new SignInPage(driver);
         signInPage.closeModal();
+        homePage.getGotItBtn().click();
         signInPage.getEmailField().sendKeys("x-o-m@ukr.net");
         signInPage.getPassword().sendKeys("qwer4152sj");
         signInPage.getLoginBtn().click();

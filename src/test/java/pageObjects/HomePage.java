@@ -88,6 +88,10 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[text()= 'Restaurant Terms']");
     }
 
+    public boolean getMyAccountBtn() {
+        return getElementByXpath("//a[text()= 'My Account']").isDisplayed();
+    }
+
     public WebElement getBerkeleyBtn() {
         return getElementByXpath("//a[text()= 'Berkeley, CA']");
     }
@@ -132,8 +136,40 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[text()= 'Santa Maria, CA']");
     }
 
-    public boolean getMyAccountBtn() {
-        return getElementByXpath("//a[text()= 'My Account']").isDisplayed();
+    public WebElement getDaytonaBtn() {
+        return getElementByXpath("//a[contains(text(), 'Daytona Beach, FL')]");
+    }
+
+    public WebElement getFortLauderdaleBtn() {
+        return getElementByXpath("//a[contains(text(), 'Fort Lauderdale, FL')]");
+    }
+
+    public WebElement getGainesvilleBtn() {
+        return getElementByXpath("//a[contains(text(), 'Gainesville, FL')]");
+    }
+
+    public WebElement getJacksonvilleBtn() {
+        return getElementByXpath("//a[contains(text(), 'Jacksonville, FL')]");
+    }
+
+    public WebElement getMiamiBtn() {
+        return getElementByXpath("//a[contains(text(), 'Miami, FL')]");
+    }
+
+    public WebElement getOrlandoBtn() {
+        return getElementByXpath("//a[contains(text(), 'Orlando, FL')]");
+    }
+
+    public WebElement getPortBtn() {
+        return getElementByXpath("//a[contains(text(), 'Port St. Lucie, FL')]");
+    }
+
+    public WebElement getTallahasseeBtn() {
+        return getElementByXpath("//a[contains(text(), 'Tallahassee, FL')]");
+    }
+
+    public WebElement getTampaBtn() {
+        return getElementByXpath("//a[contains(text(), 'Tampa, FL')]");
     }
 
     public WebElement getAddressField() {
