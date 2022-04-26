@@ -191,5 +191,25 @@ public class HomePage extends BasePage {
     public WebElement checkAndClosePopUpWindow() {
         return driver.findElement(By.xpath("//a[@id='enter-address-btn']"));
     }
+
+    public WebElement getAlbanyBtn() {
+        return getElementByXpath("//a[contains(text(), 'Albany')]");
+    }
+
+    public WebElement getCorvallisBtn() {
+        return getElementByXpath("//a[contains(text(), 'Corvallis')]");
+    }
+
+    public WebElement getPortlandBtn() {
+        return getElementByXpath("//a[contains(text(), 'Portland, OR')]");
+    }
+
+    public WebElement getSalemBtn() {
+        return getElementByXpath("//a[contains(text(), 'Salem, OR')]");
+    }
+
+    public WebElement getWilsonvilleBtn() {
+        return getElementByXpath("//a[contains(text(), 'Wilsonville')]");
+    }
 }
 
