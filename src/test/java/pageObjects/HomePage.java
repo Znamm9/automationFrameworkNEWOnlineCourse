@@ -133,5 +133,8 @@ public class HomePage extends BasePage {
     public boolean getMyAccountBtn() {
         return getElementByXpath("//a[text()= 'My Account']").isDisplayed();
     }
+    public CareersPage getCareersPage() {
+        return new CareersPage(driver);
+    }
 }
 
