@@ -191,5 +191,6 @@ public class HomePage extends BasePage {
     public WebElement checkAndClosePopUpWindow() {
         return driver.findElement(By.xpath("//a[@id='enter-address-btn']"));
     }
+    public WebElement getLifeChatBtn() { return driver.findElement(By.xpath("//span[text()='Live Chat']"));}
 }
 
