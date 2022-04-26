@@ -172,7 +172,6 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[contains(text(), 'Tampa, FL')]");
     }
 
-<<<<<<< HEAD
     public boolean getAnnArborBtn() {return getElementByXpath("//a[text()= 'Ann Arbor, MI']").isDisplayed();}
 
     public boolean getDetroitBtn() {return getElementByXpath("//a[text()= 'Detroit, MI']").isDisplayed();}
@@ -182,7 +181,7 @@ public class HomePage extends BasePage {
     public boolean getGrandRapBtn() {return getElementByXpath("//a[text()= 'Grand Rapids, MI']").isDisplayed();}
 
     public boolean getKalamazooBtb() {return getElementByXpath("//a[text()= 'Kalamazoo, MI']").isDisplayed();}
-=======
+
     public WebElement getAddressField() {
         return driver.findElement(By.xpath("//input[@id='input-food-search']"));
     }
@@ -192,6 +191,5 @@ public class HomePage extends BasePage {
     public WebElement checkAndClosePopUpWindow() {
         return driver.findElement(By.xpath("//a[@id='enter-address-btn']"));
     }
->>>>>>> origin
 }
 
