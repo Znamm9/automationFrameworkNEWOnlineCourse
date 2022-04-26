@@ -28,5 +28,4 @@ public class TestInit {
     public void after(){
         driver.quit();
     }
-
 }
