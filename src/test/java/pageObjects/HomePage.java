@@ -211,5 +211,15 @@ public class HomePage extends BasePage {
     public WebElement getWilsonvilleButton() {
         return getElementByXpath("//a[contains(text(), 'Wilsonville')]");
     }
+
+    public boolean getAlbanyBnt() {return getElementByXpath("//a[text()= 'Albany']").isDisplayed();}
+
+    public boolean getCorvallisBtn() {return getElementByXpath("//a[text()= 'Corvallis']").isDisplayed();}
+
+    public boolean getPortlandBtn() {return getElementByXpath("//a[text()= 'Portland, OR']").isDisplayed();}
+
+    public boolean getSalemBtb() {return getElementByXpath("//a[text()= 'Salem, OR']").isDisplayed();}
+
+    public boolean getWilsonvilleBtn() {return getElementByXpath("//a[text()= 'Wilsonville']").isDisplayed();}
 }
 
