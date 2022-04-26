@@ -5,10 +5,10 @@ import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.SignInPage;
 
-public class checkTextRestaurantLosAngeles extends TestInit {
+public class TestCheckTextRestaurantLosAngeles extends TestInit {
 
     @Test
-    public void checkTextRestaurantLosAngeles() {
+    public void TestCheckTextRestaurantLosAngeles() {
         HomePage homePage = new HomePage(driver);
         homePage.navigate();
         homePage.getSignInBtn().click();
