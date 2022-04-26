@@ -5,7 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class HomePage extends BasePage {
-
+    public CareersPage getCareersPage() {
+        return new CareersPage(driver);
+    }
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -86,44 +88,58 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[text()= 'Restaurant Terms']");
     }
 
+<<<<<<< HEAD
     public boolean getMyAccountBtn() {
         return getElementByXpath("//a[text()= 'My Account']").isDisplayed();
     }
 
+=======
+>>>>>>> 67e2653c89153ec3cdce2e20f39717e2d4a527ae
     public WebElement getBerkeleyBtn() {
         return getElementByXpath("//a[text()= 'Berkeley, CA']");
     }
+
     public WebElement getIrvineBtn() {
         return getElementByXpath("//a[text()= 'Irvine, CA']");
     }
+
     public WebElement getLosAngelesBtn() {
         return getElementByXpath("//a[text()= 'Los Angeles, CA']");
     }
+
     public WebElement getOaklandBtn() {
         return getElementByXpath("//a[text()= 'Oakland, CA']");
     }
+
     public WebElement getPaloAltoBtn() {
         return getElementByXpath("//a[text()= 'Palo Alto, CA']");
     }
+
     public WebElement getRiversideBtn() {
         return getElementByXpath("//a[text()= 'Riverside, CA']");
     }
+
     public WebElement getSacramentoBtn() {
         return getElementByXpath("//a[text()= 'Sacramento, CA']");
     }
+
     public WebElement getSanDiegoBtn() {
         return getElementByXpath("//a[text()= 'San Diego, CA']");
     }
+
     public WebElement getSanFranciscoBtn() {
         return getElementByXpath("//a[text()= 'San Francisco, CA']");
     }
+
     public WebElement getSanJoseBtn() {
         return getElementByXpath("//a[text()= 'San Jose, CA']");
     }
+
     public WebElement getSantaMariaBtn() {
         return getElementByXpath("//a[text()= 'Santa Maria, CA']");
     }
 
+<<<<<<< HEAD
     public WebElement getDaytonaBtn() {
         return getElementByXpath("//a[contains(text(), 'Daytona Beach, FL')]");
     }
@@ -158,5 +174,23 @@ public class HomePage extends BasePage {
 
     public WebElement getTampaBtn() {
         return getElementByXpath("//a[contains(text(), 'Tampa, FL')]");
+=======
+    public boolean getMyAccountBtn() {
+        return getElementByXpath("//a[text()= 'My Account']").isDisplayed();
+>>>>>>> 67e2653c89153ec3cdce2e20f39717e2d4a527ae
+    }
+
+    public WebElement getAddressField() {
+        return driver.findElement(By.xpath("//input[@id='input-food-search']"));
+    }
+    public WebElement getFedBtn() {
+        return driver.findElement(By.xpath("//a[@id='find-restaurants']"));
+    }
+    public WebElement checkAndClosePopUpWindow() {
+        return driver.findElement(By.xpath("//a[@id='enter-address-btn']"));
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 67e2653c89153ec3cdce2e20f39717e2d4a527ae
