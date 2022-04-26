@@ -123,4 +123,40 @@ public class HomePage extends BasePage {
     public WebElement getSantaMariaBtn() {
         return getElementByXpath("//a[text()= 'Santa Maria, CA']");
     }
+
+    public WebElement getDaytonaBtn() {
+        return getElementByXpath("//a[contains(text(), 'Daytona Beach, FL')]");
+    }
+
+    public WebElement getFortLauderdaleBtn() {
+        return getElementByXpath("//a[contains(text(), 'Fort Lauderdale, FL')]");
+    }
+
+    public WebElement getGainesvilleBtn() {
+        return getElementByXpath("//a[contains(text(), 'Gainesville, FL')]");
+    }
+
+    public WebElement getJacksonvilleBtn() {
+        return getElementByXpath("//a[contains(text(), 'Jacksonville, FL')]");
+    }
+
+    public WebElement getMiamiBtn() {
+        return getElementByXpath("//a[contains(text(), 'Miami, FL')]");
+    }
+
+    public WebElement getOrlandoBtn() {
+        return getElementByXpath("//a[contains(text(), 'Orlando, FL')]");
+    }
+
+    public WebElement getPortBtn() {
+        return getElementByXpath("//a[contains(text(), 'Port St. Lucie, FL')]");
+    }
+
+    public WebElement getTallahasseeBtn() {
+        return getElementByXpath("//a[contains(text(), 'Tallahassee, FL')]");
+    }
+
+    public WebElement getTampaBtn() {
+        return getElementByXpath("//a[contains(text(), 'Tampa, FL')]");
+    }
 }
