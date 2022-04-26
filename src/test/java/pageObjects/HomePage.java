@@ -89,4 +89,38 @@ public class HomePage extends BasePage {
     public boolean getMyAccountBtn() {
         return getElementByXpath("//a[text()= 'My Account']").isDisplayed();
     }
+
+    public WebElement getBerkeleyBtn() {
+        return getElementByXpath("//a[text()= 'Berkeley, CA']");
+    }
+    public WebElement getIrvineBtn() {
+        return getElementByXpath("//a[text()= 'Irvine, CA']");
+    }
+    public WebElement getLosAngelesBtn() {
+        return getElementByXpath("//a[text()= 'Los Angeles, CA']");
+    }
+    public WebElement getOaklandBtn() {
+        return getElementByXpath("//a[text()= 'Oakland, CA']");
+    }
+    public WebElement getPaloAltoBtn() {
+        return getElementByXpath("//a[text()= 'Palo Alto, CA']");
+    }
+    public WebElement getRiversideBtn() {
+        return getElementByXpath("//a[text()= 'Riverside, CA']");
+    }
+    public WebElement getSacramentoBtn() {
+        return getElementByXpath("//a[text()= 'Sacramento, CA']");
+    }
+    public WebElement getSanDiegoBtn() {
+        return getElementByXpath("//a[text()= 'San Diego, CA']");
+    }
+    public WebElement getSanFranciscoBtn() {
+        return getElementByXpath("//a[text()= 'San Francisco, CA']");
+    }
+    public WebElement getSanJoseBtn() {
+        return getElementByXpath("//a[text()= 'San Jose, CA']");
+    }
+    public WebElement getSantaMariaBtn() {
+        return getElementByXpath("//a[text()= 'Santa Maria, CA']");
+    }
 }
