@@ -192,6 +192,26 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//a[@id='enter-address-btn']"));
     }
 
+    public WebElement getAlbanyButton() {
+        return getElementByXpath("//a[contains(text(), 'Albany')]");
+    }
+
+    public WebElement getCorvallisButton() {
+        return getElementByXpath("//a[contains(text(), 'Corvallis')]");
+    }
+
+    public WebElement getPortlandButton() {
+        return getElementByXpath("//a[contains(text(), 'Portland, OR')]");
+    }
+
+    public WebElement getSalemButton() {
+        return getElementByXpath("//a[contains(text(), 'Salem, OR')]");
+    }
+
+    public WebElement getWilsonvilleButton() {
+        return getElementByXpath("//a[contains(text(), 'Wilsonville')]");
+    }
+
     public boolean getAlbanyBnt() {return getElementByXpath("//a[text()= 'Albany']").isDisplayed();}
 
     public boolean getCorvallisBtn() {return getElementByXpath("//a[text()= 'Corvallis']").isDisplayed();}
