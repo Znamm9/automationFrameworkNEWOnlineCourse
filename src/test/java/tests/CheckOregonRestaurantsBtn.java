@@ -12,10 +12,10 @@ public class CheckOregonRestaurantsBtn extends TestInit {
         homePage.navigate();
         homePage.getGotItBtn().click();
 
-        Assert.assertTrue(homePage.getAlbanyBtn().isDisplayed());
-        Assert.assertTrue(homePage.getCorvallisBtn().isDisplayed());
-        Assert.assertTrue(homePage.getPortlandBtn().isDisplayed());
-        Assert.assertTrue(homePage.getSalemBtn().isDisplayed());
-        Assert.assertTrue(homePage.getWilsonvilleBtn().isDisplayed());
+        Assert.assertTrue(homePage.getAlbanyButton().isDisplayed());
+        Assert.assertTrue(homePage.getCorvallisButton().isDisplayed());
+        Assert.assertTrue(homePage.getPortlandButton().isDisplayed());
+        Assert.assertTrue(homePage.getSalemButton().isDisplayed());
+        Assert.assertTrue(homePage.getWilsonvilleButton().isDisplayed());
     }
 }
