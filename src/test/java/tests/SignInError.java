@@ -13,7 +13,6 @@ public class SignInError extends TestInit {
         homePage.navigate();
         homePage.getGotItBtn().click();
         homePage.getSignInBtn().click();
-
         SignInPage signInPage = new SignInPage(driver);
         signInPage.getSignBtn().click();
         sleep(2);
