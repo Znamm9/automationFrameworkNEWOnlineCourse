@@ -228,6 +228,11 @@ public class HomePage extends BasePage {
 
     public WebElement getAppStoryBtn() {return getElementByXpath("//a[@class='app-btn-iphone']");}
 
+    public WebElement getLifeChatBtn() { return driver.findElement(By.xpath("//span[text()='Live Chat']"));}
+
+    public boolean getCheckGetFedBtn () {return getElementByXpath("//a[@class='btn btn-primary float-left']").isDisplayed();}
+
     public WebElement appStoryLinkEatSt() {return getElementByXpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']");}
 }
+
 
