@@ -191,7 +191,6 @@ public class HomePage extends BasePage {
     public WebElement checkAndClosePopUpWindow() {
         return driver.findElement(By.xpath("//a[@id='enter-address-btn']"));
     }
-    public WebElement getLifeChatBtn() { return driver.findElement(By.xpath("//span[text()='Live Chat']"));}
 
     public WebElement getAlbanyButton() {
         return getElementByXpath("//a[contains(text(), 'Albany')]");
@@ -222,6 +221,6 @@ public class HomePage extends BasePage {
     public boolean getSalemBtb() {return getElementByXpath("//a[text()= 'Salem, OR']").isDisplayed();}
 
     public boolean getWilsonvilleBtn() {return getElementByXpath("//a[text()= 'Wilsonville']").isDisplayed();}
->>>>>>> master
+    public WebElement getLifeChatBtn() { return driver.findElement(By.xpath("//span[text()='Live Chat']"));}
 }
 
