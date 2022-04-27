@@ -229,5 +229,6 @@ public class HomePage extends BasePage {
     public WebElement getAppStoryBtn() {return driver.findElement(By.xpath("//a[@class='app-btn-iphone']"));}
 
     public WebElement appStoryLinkEatSt() {return driver.findElement(By.xpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']"));}
+    public WebElement getLifeChatBtn() { return driver.findElement(By.xpath("//span[text()='Live Chat']"));}
 }
 
