@@ -15,7 +15,7 @@ public class SignInError extends TestInit {
         homePage.getSignInBtn().click();
 
         SignInPage signInPage = new SignInPage(driver);
-        signInPage.signInBtn().click();
+        signInPage.getSignBtn().click();
         sleep(2);
 
         Assert.assertTrue(signInPage.messageError().isDisplayed());
