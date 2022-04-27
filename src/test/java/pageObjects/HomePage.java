@@ -222,12 +222,12 @@ public class HomePage extends BasePage {
 
     public boolean getWilsonvilleBtn() {return getElementByXpath("//a[text()= 'Wilsonville']").isDisplayed();}
 
-    public WebElement getGooglePlayBtn() {return driver.findElement(By.xpath("//a[@class='app-btn-android']"));}
+    public WebElement getGooglePlayBtn() {return getElementByXpath("//a[@class='app-btn-android']");}
 
-    public WebElement googlePlayLinkEatSt() {return driver.findElement(By.xpath("//a[@href='/store/apps/developer?id=EatStreet']"));}
+    public WebElement googlePlayLinkEatSt() {return getElementByXpath("//a[@href='/store/apps/developer?id=EatStreet']");}
 
-    public WebElement getAppStoryBtn() {return driver.findElement(By.xpath("//a[@class='app-btn-iphone']"));}
+    public WebElement getAppStoryBtn() {return getElementByXpath("//a[@class='app-btn-iphone']");}
 
-    public WebElement appStoryLinkEatSt() {return driver.findElement(By.xpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']"));}
+    public WebElement appStoryLinkEatSt() {return getElementByXpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']");}
 }
 
