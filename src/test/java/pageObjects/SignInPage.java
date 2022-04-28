@@ -2,7 +2,6 @@ package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.w3c.dom.html.HTMLInputElement;
 
 public class SignInPage extends BasePage {
 

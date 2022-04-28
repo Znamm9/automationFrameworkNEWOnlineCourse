@@ -3,7 +3,6 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.w3c.dom.html.HTMLInputElement;
 
 import java.util.List;
 
@@ -43,6 +42,7 @@ public class BasePage {
             return Integer.parseInt(System.getProperty("slow_mo"));
         }
     }
+
     public void clickElementByXpath(String locator) {
         getElementByXpath(locator).click();
     }
