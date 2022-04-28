@@ -221,5 +221,29 @@ public class HomePage extends BasePage {
     public boolean getSalemBtb() {return getElementByXpath("//a[text()= 'Salem, OR']").isDisplayed();}
 
     public boolean getWilsonvilleBtn() {return getElementByXpath("//a[text()= 'Wilsonville']").isDisplayed();}
+
+    public WebElement getAlexandriaBtn() {
+        return getElementByXpath("//a[contains(text(), 'Alexandria, VA')]");
+    }
+
+    public WebElement getArlingtonBtn() {
+        return getElementByXpath("//a[contains(text(), 'Arlington, VA')]");
+    }
+
+    public WebElement getCharlottesvilleBtn() {
+        return getElementByXpath("//a[contains(text(), 'Charlottesville, VA')]");
+    }
+
+    public WebElement getFairfaxBtn() {
+        return getElementByXpath("//a[contains(text(), 'Fairfax, VA')]");
+    }
+
+    public WebElement getNorfolkBtn() {
+        return getElementByXpath("//a[contains(text(), 'Norfolk, VA')]");
+    }
+
+    public WebElement getRichmondBtn() {
+        return getElementByXpath("//a[contains(text(), 'Richmond, VA')]");
+    }
 }
 
