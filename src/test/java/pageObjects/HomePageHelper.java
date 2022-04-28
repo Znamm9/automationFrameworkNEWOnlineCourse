@@ -12,15 +12,11 @@ public class HomePageHelper extends HomePageElements {
     }
 
     public void clickAttempt() {
-        if (getSearchAttempt() != null) {
-            getSearchAttempt().click();
-        }
+        getSearchAttempt().click();
     }
 
     public void clickGotItBtn() {
-        if (getGotItBtn() != null) {
-            getGotItBtn().click();
-        }
+        getGotItBtn().click();
     }
 
     public void clickSelectFirstListSearch() {
