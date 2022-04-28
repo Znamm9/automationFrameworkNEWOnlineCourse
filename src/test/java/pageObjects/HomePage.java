@@ -268,6 +268,13 @@ public class HomePage extends BasePage {
     public WebElement appStoryLinkEatSt() {
         return getElementByXpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']");
     }
+
+
+    public WebElement getDeliveryBtn() {
+        return getElementByXpath("//label[contains(text(), 'Delivery')]");
+    }
+
+    public void clickNewYorkRestaurants() {
+        getElementByXpath("//a[contains(text(), 'New York City, NY')]").click();
+    }
 }
-
-
