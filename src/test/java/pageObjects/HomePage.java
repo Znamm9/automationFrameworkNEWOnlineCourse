@@ -233,6 +233,11 @@ public class HomePage extends BasePage {
     public boolean getCheckGetFedBtn () {return getElementByXpath("//a[@class='btn btn-primary float-left']").isDisplayed();}
 
     public WebElement appStoryLinkEatSt() {return getElementByXpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']");}
+
+    public WebElement getSearchField() {return getElementByXpath("//input[@id='input-food-search']");}
+
+    public WebElement getSearchImageBtn() {return getElementByXpath("//*[@id='find-restaurants']");}
 }
+
 
 
