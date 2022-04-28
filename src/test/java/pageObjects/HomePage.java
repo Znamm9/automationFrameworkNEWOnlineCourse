@@ -8,6 +8,7 @@ public class HomePage extends BasePage {
     public CareersPage getCareersPage() {
         return new CareersPage(driver);
     }
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -172,22 +173,34 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[contains(text(), 'Tampa, FL')]");
     }
 
-    public boolean getAnnArborBtn() {return getElementByXpath("//a[text()= 'Ann Arbor, MI']").isDisplayed();}
+    public boolean getAnnArborBtn() {
+        return getElementByXpath("//a[text()= 'Ann Arbor, MI']").isDisplayed();
+    }
 
-    public boolean getDetroitBtn() {return getElementByXpath("//a[text()= 'Detroit, MI']").isDisplayed();}
+    public boolean getDetroitBtn() {
+        return getElementByXpath("//a[text()= 'Detroit, MI']").isDisplayed();
+    }
 
-    public boolean getEastLansingBtn() {return getElementByXpath("//a[text()= 'East Lansing, MI']").isDisplayed();}
+    public boolean getEastLansingBtn() {
+        return getElementByXpath("//a[text()= 'East Lansing, MI']").isDisplayed();
+    }
 
-    public boolean getGrandRapBtn() {return getElementByXpath("//a[text()= 'Grand Rapids, MI']").isDisplayed();}
+    public boolean getGrandRapBtn() {
+        return getElementByXpath("//a[text()= 'Grand Rapids, MI']").isDisplayed();
+    }
 
-    public boolean getKalamazooBtb() {return getElementByXpath("//a[text()= 'Kalamazoo, MI']").isDisplayed();}
+    public boolean getKalamazooBtb() {
+        return getElementByXpath("//a[text()= 'Kalamazoo, MI']").isDisplayed();
+    }
 
     public WebElement getAddressField() {
         return driver.findElement(By.xpath("//input[@id='input-food-search']"));
     }
+
     public WebElement getFedBtn() {
         return driver.findElement(By.xpath("//a[@id='find-restaurants']"));
     }
+
     public WebElement checkAndClosePopUpWindow() {
         return driver.findElement(By.xpath("//a[@id='enter-address-btn']"));
     }
@@ -212,23 +225,41 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[contains(text(), 'Wilsonville')]");
     }
 
-    public boolean getAlbanyBnt() {return getElementByXpath("//a[text()= 'Albany']").isDisplayed();}
+    public boolean getAlbanyBnt() {
+        return getElementByXpath("//a[text()= 'Albany']").isDisplayed();
+    }
 
-    public boolean getCorvallisBtn() {return getElementByXpath("//a[text()= 'Corvallis']").isDisplayed();}
+    public boolean getCorvallisBtn() {
+        return getElementByXpath("//a[text()= 'Corvallis']").isDisplayed();
+    }
 
-    public boolean getPortlandBtn() {return getElementByXpath("//a[text()= 'Portland, OR']").isDisplayed();}
+    public boolean getPortlandBtn() {
+        return getElementByXpath("//a[text()= 'Portland, OR']").isDisplayed();
+    }
 
-    public boolean getSalemBtb() {return getElementByXpath("//a[text()= 'Salem, OR']").isDisplayed();}
+    public boolean getSalemBtb() {
+        return getElementByXpath("//a[text()= 'Salem, OR']").isDisplayed();
+    }
+
+    public WebElement getGooglePlayBtn() {
+        return getElementByXpath("//a[@class='app-btn-android']");
+    }
 
     public boolean getWilsonvilleBtn() {
         return getElementByXpath("//a[text()= 'Wilsonville']").isDisplayed();
     }
 
-    public WebElement getGooglePlayBtn() {return driver.findElement(By.xpath("//a[@class='app-btn-android']"));}
+    public WebElement getCharlottesvilleBtn() {
+        return getElementByXpath("//a[contains(text(), 'Charlottesville, VA')]");
+    }
 
-    public WebElement googlePlayLinkEatSt() {return driver.findElement(By.xpath("//a[@href='/store/apps/developer?id=EatStreet']"));}
+    public WebElement getFairfaxBtn() {
+        return getElementByXpath("//a[contains(text(), 'Fairfax, VA')]");
+    }
 
-    public WebElement getAppStoryBtn() {return driver.findElement(By.xpath("//a[@class='app-btn-iphone']"));}
+    public WebElement getNorfolkBtn() {
+        return getElementByXpath("//a[contains(text(), 'Norfolk, VA')]");
+    }
 
     public WebElement appStoryLinkEatSt() {return driver.findElement(By.xpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']"));}
 
@@ -239,5 +270,10 @@ public class HomePage extends BasePage {
     public WebElement getBtnBlog() {
         return driver.findElement(By.xpath("//a[contains(text(), 'Blog')]"));
     }
-}
 
+
+
+    public WebElement getDeliveryBtn() {
+        return getElementByXpath("//label[contains(text(), 'Delivery')]");
+    }
+}
