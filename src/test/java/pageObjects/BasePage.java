@@ -3,6 +3,9 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.w3c.dom.html.HTMLInputElement;
+
+import java.util.List;
 
 public class BasePage {
 
@@ -39,5 +42,16 @@ public class BasePage {
         }else {
             return Integer.parseInt(System.getProperty("slow_mo"));
         }
+    }
+    public void clickElementByXpath(String locator) {
+        getElementByXpath(locator).click();
+    }
+    public List<WebElement> getElementsByXpath(String locator) {
+        sleep(getSlowMoNum());
+        return driver.findElements(By.xpath(locator));
+    }
+
+    public WebElement getLoadMoreBtn() {
+        return driver.findElement(By.xpath("//button[@class='btn btn--orange']"));
     }
 }
