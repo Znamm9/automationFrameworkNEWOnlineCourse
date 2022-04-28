@@ -94,7 +94,6 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[@class='partners-link ng-scope']");
     }
 
-
     public WebElement getImgCart() {
         return getElementByXpath("//img[@alt='cart']");
     }
