@@ -17,4 +17,12 @@ public class CareersPage extends BasePage {
     public List<WebElement> getListApplyHereBtn() {
         return getElementsByXpath("//*[contains(text(),'Apply Here')]");
     }
+
+    public WebElement getEatSteetDriver() {
+        return getElementByXpath("//*[contains(text(),'Apply Now')]");
+    }
+
+    public WebElement tabsInfoForDiners() {
+        return getElementByXpath("//*[@class='delivery-perks padding-top-40 flex-4 container--fluid margin-right-40']");
+    }
 }
