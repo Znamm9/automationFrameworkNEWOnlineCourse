@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import pageObjects.HomePage;
 
 public class TestRestaurantsPage extends TestInit {
+
     @Test
     public void searchWashington() {
         HomePage homePage = new HomePage(driver);
@@ -40,6 +41,5 @@ public class TestRestaurantsPage extends TestInit {
         Assert.assertTrue(getElementByXpath("//input[@id='filter-Free Delivery']/..").isDisplayed());
         Assert.assertTrue(getElementByXpath("//input[@id='filter-Order Ahead']/..").isDisplayed());
         Assert.assertTrue(getElementByXpath("//input[@id='filter-Specials']/..").isDisplayed());
-
     }
 }
