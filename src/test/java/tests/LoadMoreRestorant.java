@@ -10,14 +10,8 @@ public class LoadMoreRestorant extends TestInit{
         public void CheckLoadMoreRestorant(){
             HomePage homePage = new HomePage(driver);
             homePage.navigate();
-            //sleep(3);
-           //homePage.getAddressField().sendKeys("Seattle");
-           //homePage.getFedBtn().click();
-            //sleep(3);
-           // homePage.checkAndClosePopUpWindow().click();
-            //sleep(3);
-            //homePage.getLoadMoreBtn().click();
-            Assert.assertTrue(homePage.getFedBtn().isDisplayed());
+            
+          Assert.assertTrue(homePage.getFedBtn().isDisplayed());
 
         }
 }
