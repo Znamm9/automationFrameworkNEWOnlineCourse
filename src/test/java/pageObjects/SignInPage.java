@@ -1,6 +1,5 @@
 package pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -35,6 +34,13 @@ public class SignInPage extends BasePage {
     }
 
     public WebElement getSignBtn() {
+        return getElementByXpath("//button[@id='signin']");
+    }
+    public WebElement messageError(){
+        return getElementByXpath("//div[@id='email-validation-tag']");
+    }
+
+    public WebElement signInBtn() {
         return getElementByXpath("//button[@id='signin']");
     }
 }
