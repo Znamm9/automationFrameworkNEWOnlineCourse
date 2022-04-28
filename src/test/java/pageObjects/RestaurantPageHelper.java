@@ -15,12 +15,23 @@ public class RestaurantPageHelper extends RestaurantPageElements{
         searchContainsTextByElemen(element, name).click();
     }
 
-    public boolean isRestorantByName(String element, String name){
-        return searchContainsTextByElemen(element, name).isDisplayed();
+    public boolean isTitleRestorant(){
+        return getTitleRestaurant().isDisplayed();
     }
 
-    public boolean isMenuRestorant(){
+    public boolean isMenuRestaurant(){
         return getMenuRestoranBlock().isDisplayed();
     }
 
+    public boolean isReviewsRestaurant(){
+        return getReviewsBlock().isDisplayed();
+    }
+
+    public void clickFirstElemetSearch(){
+        selectFirstElementSearch().click();
+    }
+
+    public boolean isListBlockRestaurants(){
+        return getListBlockRestaurants().isDisplayed();
+    }
 }

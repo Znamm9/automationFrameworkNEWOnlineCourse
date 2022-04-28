@@ -24,4 +24,20 @@ public class RestaurantPageElements extends BasePage {
         return waitLocatorPage(locator);
     }
 
+    public WebElement getReviewsBlock(){
+        return waitLocatorPage("//div[@id='tt-reviews-list']");
+    }
+
+    public WebElement getTitleRestaurant(){
+        return  waitLocatorPage("//ul[@class='restaurant-info--menu']/li/h1");
+    }
+
+    public WebElement selectFirstElementSearch(){
+        return  waitLocatorPage("//li[contains(text(), 'Chicken')]");
+    }
+
+    public WebElement getListBlockRestaurants(){
+        return  waitLocatorPage("//div[@class='restaurants-list_container']");
+    }
+
 }
