@@ -252,19 +252,38 @@ public class HomePage extends BasePage {
     public WebElement getAppStoryBtn() {
         return getElementByXpath("//a[@class='app-btn-iphone']");
     }
+    public boolean getAlbanyBnt() {
+        return getElementByXpath("//a[text()= 'Albany']").isDisplayed();
+    }
 
+    public boolean getCorvallisBtn() {
+        return getElementByXpath("//a[text()= 'Corvallis']").isDisplayed();
+    }
+
+    public boolean getPortlandBtn() {
+        return getElementByXpath("//a[text()= 'Portland, OR']").isDisplayed();
+    }
     public boolean getWilsonvilleBtn() {
         return getElementByXpath("//a[text()= 'Wilsonville']").isDisplayed();
     }
 
+    public boolean getSalemBtb() {
+        return getElementByXpath("//a[text()= 'Salem, OR']").isDisplayed();
+    }
     public WebElement getAlexandriaBtn() {
         return getElementByXpath("//a[contains(text(), 'Alexandria, VA')]");
     }
 
+    public boolean getWilsonvilleBtn() {
+        return getElementByXpath("//a[text()= 'Wilsonville']").isDisplayed();
+    }
     public WebElement getArlingtonBtn() {
         return getElementByXpath("//a[contains(text(), 'Arlington, VA')]");
     }
 
+    public WebElement getGooglePlayBtn() {
+        return driver.findElement(By.xpath("//a[@class='app-btn-android']"));
+    }
     public WebElement getCharlottesvilleBtn() {
         return getElementByXpath("//a[contains(text(), 'Charlottesville, VA')]");
     }
@@ -272,11 +291,20 @@ public class HomePage extends BasePage {
     public WebElement getFairfaxBtn() {
         return getElementByXpath("//a[contains(text(), 'Fairfax, VA')]");
     }
+    public WebElement googlePlayLinkEatSt() {
+        return driver.findElement(By.xpath("//a[@href='/store/apps/developer?id=EatStreet']"));
+    }
 
     public WebElement getNorfolkBtn() {
         return getElementByXpath("//a[contains(text(), 'Norfolk, VA')]");
     }
+    public WebElement getAppStoryBtn() {
+        return driver.findElement(By.xpath("//a[@class='app-btn-iphone']"));
+    }
 
+    public WebElement appStoryLinkEatSt() {
+        return driver.findElement(By.xpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']"));
+    }
     public WebElement getRichmondBtn() {
         return getElementByXpath("//a[contains(text(), 'Richmond, VA')]");
     }
@@ -287,6 +315,17 @@ public class HomePage extends BasePage {
 
     public WebElement getCheckGetFedBtn() {
         return getElementByXpath("//a[@class='btn btn-primary float-left']");
+    }
+    public boolean getCheckGetFedBtn() {
+        return getElementByXpath("//a[@class='btn btn-primary float-left']").isDisplayed();
+    }
+
+    public boolean getApplyNowBtn() {
+        return getElementByXpath("//a[@href = '/driver-careers']").isDisplayed();
+    }
+
+    public boolean getButtonApplyNowInYourCity() {
+        return getElementByXpath("//select[@onchange = 'location = this.value;']").isDisplayed();
     }
 
     public WebElement appStoryLinkEatSt() {
