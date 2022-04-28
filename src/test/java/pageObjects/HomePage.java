@@ -237,7 +237,10 @@ public class HomePage extends BasePage {
     public WebElement getSearchField() {return getElementByXpath("//input[@id='input-food-search']");}
 
     public WebElement getSearchImageBtn() {return getElementByXpath("//*[@id='find-restaurants']");}
+
 }
+
+
 
 
 
