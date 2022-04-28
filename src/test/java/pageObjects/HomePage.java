@@ -220,7 +220,9 @@ public class HomePage extends BasePage {
 
     public boolean getSalemBtb() {return getElementByXpath("//a[text()= 'Salem, OR']").isDisplayed();}
 
-    public boolean getWilsonvilleBtn() {return getElementByXpath("//a[text()= 'Wilsonville']").isDisplayed();}
+    public boolean getWilsonvilleBtn() {
+        return getElementByXpath("//a[text()= 'Wilsonville']").isDisplayed();
+    }
 
     public WebElement getGooglePlayBtn() {return driver.findElement(By.xpath("//a[@class='app-btn-android']"));}
 
@@ -229,6 +231,13 @@ public class HomePage extends BasePage {
     public WebElement getAppStoryBtn() {return driver.findElement(By.xpath("//a[@class='app-btn-iphone']"));}
 
     public WebElement appStoryLinkEatSt() {return driver.findElement(By.xpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']"));}
-    public WebElement getLifeChatBtn() { return driver.findElement(By.xpath("//span[text()='Live Chat']"));}
+
+    public WebElement getLifeChatBtn() {
+        return driver.findElement(By.xpath("//span[text()='Live Chat']"));
+    }
+
+    public WebElement getBtnBlog() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Blog')]"));
+    }
 }
 
