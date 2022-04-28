@@ -19,7 +19,7 @@ public class BasePage {
 
     public String getEnv(){
         if (System.getProperty("env") == null){
-            return "https://eatstreet.com";
+            return "https://qa2.eatstreet.com";
         }else {
             return "https://" + System.getProperty("env") + ".eatstreet.com";
         }

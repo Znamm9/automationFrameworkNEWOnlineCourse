@@ -1,14 +1,9 @@
 package pageObjects;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.concurrent.TimeUnit;
-
-public class RestoranPageHelper extends RestaurantPageElements{
-    public RestoranPageHelper(WebDriver driver) {
+public class RestaurantPageHelper extends RestaurantPageElements{
+    public RestaurantPageHelper(WebDriver driver) {
         super(driver);
     }
 

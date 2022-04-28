@@ -2,10 +2,8 @@ package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageObjects.HomePage;
 import pageObjects.HomePageHelper;
-import pageObjects.RestaurantPageElements;
-import pageObjects.RestoranPageHelper;
+import pageObjects.RestaurantPageHelper;
 
 public class TestMenuItems extends TestInit {
 
@@ -20,7 +18,7 @@ public class TestMenuItems extends TestInit {
         homePage.setTextSearch("New York");
         homePage.clickSelectFirstListSearch();
 
-        RestoranPageHelper restaurantHelper = new RestoranPageHelper(driver);
+        RestaurantPageHelper restaurantHelper = new RestaurantPageHelper(driver);
         restaurantHelper.clickContainsTextByElemen("a","Yummy Gyro - Williston Park");
 
         Assert.assertTrue(restaurantHelper.isMenuRestorant());
