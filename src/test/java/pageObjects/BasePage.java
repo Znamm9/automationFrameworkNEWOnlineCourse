@@ -3,6 +3,10 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 import java.util.List;
 
 public class BasePage {
@@ -15,7 +19,7 @@ public class BasePage {
 
     public String getEnv(){
         if (System.getProperty("env") == null){
-            return "https://qa2.eatstreet.com";
+            return "https://eatstreet.com";
         }else {
             return "https://" + System.getProperty("env") + ".eatstreet.com";
         }
@@ -27,6 +31,11 @@ public class BasePage {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public WebElement waitLocatorPage(String locator){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+        return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
     }
 
     public WebElement getElementByXpath(String locator){
