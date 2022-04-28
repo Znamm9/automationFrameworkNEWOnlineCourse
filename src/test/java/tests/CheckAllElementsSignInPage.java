@@ -6,6 +6,7 @@ import pageObjects.HomePage;
 import pageObjects.SignInPage;
 
 public class CheckAllElementsSignInPage extends TestInit {
+
     @Test
     public void checkAllElementsSignInPage() {
         HomePage homePage = new HomePage(driver);
