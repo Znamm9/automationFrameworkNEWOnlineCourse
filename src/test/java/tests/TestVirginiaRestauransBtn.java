@@ -1,14 +1,12 @@
 package tests;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageObjects.BasePage;
 import pageObjects.HomePage;
 
 public class TestVirginiaRestauransBtn extends TestInit {
 
     @Test
-    public void testVirginiaRestauransBtn(){
+    public void testVirginiaRestauransBtn() {
         HomePage homePage = new HomePage(driver);
         homePage.navigate();
         homePage.getGotItBtn().click();
