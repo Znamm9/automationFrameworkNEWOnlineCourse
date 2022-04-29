@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import pageObjects.HomePage;
 
 public class CheckRestorantBoston extends TestInit {
+
     @Test
     public void checkTextRestaurantBoston() {
         HomePage homePage = new HomePage(driver);
