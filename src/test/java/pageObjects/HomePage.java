@@ -277,6 +277,9 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[contains(text(), 'Norfolk, VA')]");
     }
 
+    public WebElement appStoryLinkEatSt() {
+        return driver.findElement(By.xpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']"));
+    }
     public WebElement getRichmondBtn() {
         return getElementByXpath("//a[contains(text(), 'Richmond, VA')]");
     }
@@ -289,8 +292,12 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[@class='btn btn-primary float-left']");
     }
 
-    public WebElement appStoryLinkEatSt() {
-        return getElementByXpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']");
+    public boolean getApplyNowBtn() {
+        return getElementByXpath("//a[@href = '/driver-careers']").isDisplayed();
+    }
+
+    public boolean getButtonApplyNowInYourCity() {
+        return getElementByXpath("//select[@onchange = 'location = this.value;']").isDisplayed();
     }
 
     public WebElement getDeliveryBtn() {

@@ -15,7 +15,7 @@ public class TestLifeChat extends TestInit{
 
         LifeChatPage lifeChatPage = new LifeChatPage(driver);
         lifeChatPage.LifeChatPage().click();
-
+        sleep(2);
         Assert.assertTrue(homePage.getLifeChatBtn().isDisplayed());
     }
 }
