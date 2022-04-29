@@ -1,4 +1,5 @@
 package tests;
+
 import org.openqa.selenium.devtools.v98.page.model.NavigationEntry;
 import org.testng.Assert;
 import org.testng.annotations.Test;
