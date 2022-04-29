@@ -11,12 +11,10 @@ public class CheckApplyNow extends TestInit {
         HomePage homePage = new HomePage(driver);
         homePage.navigate();
         homePage.getGotItBtn().click();
-
         ApplyNowPage checkApplyNow = new ApplyNowPage(driver);
         checkApplyNow.getApplyNowBtn().click();
-
         sleep(2);
-        Assert.assertTrue(homePage.getButtonApplyNowInYourCity());
 
+        Assert.assertTrue(homePage.getButtonApplyNowInYourCity());
     }
 }

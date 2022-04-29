@@ -14,7 +14,6 @@ public class CheckGetFed extends TestInit {
         HomePage homePage = new HomePage(driver);
         homePage.navigate();
         homePage.getGotItBtn().click();
-
         GetFedPage getFedPage = new GetFedPage(driver);
         getFedPage.GetFedPage().click();
 
