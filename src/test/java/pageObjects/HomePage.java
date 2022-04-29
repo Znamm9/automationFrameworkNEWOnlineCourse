@@ -303,4 +303,12 @@ public class HomePage extends BasePage {
     public WebElement getDeliveryBtn() {
         return getElementByXpath("//label[contains(text(), 'Delivery')]");
     }
+
+    public WebElement getOklahomaCityBtn() {
+        return getElementByXpath("//a[contains(text(), 'Oklahoma City, OK')]");
+    }
+
+    public WebElement getStillwaterBtn() {
+        return getElementByXpath("//a[contains(text(), 'Stillwater, OK')]");
+    }
 }
