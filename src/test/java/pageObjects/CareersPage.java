@@ -37,7 +37,8 @@ public class CareersPage extends BasePage {
 
     public WebElement textTabsForJob() {
         return getElementByXpath("//*[@class='records-container']");
-      
+    }
+
     public WebElement getTechBtn() {
         return getElementByXpath("//label[text()= 'Tech']");
     }
