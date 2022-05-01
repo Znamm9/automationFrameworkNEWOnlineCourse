@@ -11,7 +11,7 @@ public class TestCheckCareersText extends TestInit {
         homePage.navigate();
         homePage.getGotItBtn().click();
         homePage.getDeliveryBtn().click();
-        homePage.getCareersPage().getEatSteetDriver().click();
+        homePage.getCareersPage().getEatStreetDriver().click();
         sleep(1);
 
         Assert.assertTrue(homePage.getCareersPage().tabsInfoForDiners().getText().contains("Make great money"));
