@@ -3,6 +3,10 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 import java.util.List;
 
 public class BasePage {
@@ -27,6 +31,11 @@ public class BasePage {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public WebElement waitLocatorPage(String locator){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+        return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
     }
 
     public WebElement getElementByXpath(String locator){
