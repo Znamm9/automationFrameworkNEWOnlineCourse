@@ -1,13 +1,8 @@
 package tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageObjects.BasePage;
 import pageObjects.HomePage;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class CheckSocialMediaBtns extends TestInit {
 
