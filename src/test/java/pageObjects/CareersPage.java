@@ -25,4 +25,24 @@ public class CareersPage extends BasePage {
     public WebElement tabsInfoForDiners() {
         return getElementByXpath("//*[@class='delivery-perks padding-top-40 flex-4 container--fluid margin-right-40']");
     }
+
+    public WebElement getTechBtn() {
+        return getElementByXpath("//label[text()= 'Tech']");
+    }
+
+    public WebElement getCreativeBtn() {
+        return getElementByXpath("//label[text()= 'Creative']");
+    }
+
+    public WebElement getCulinaryBtn() {
+        return getElementByXpath("//label[text()= 'Culinary']");
+    }
+
+    public WebElement getBusinessBtn() {
+        return getElementByXpath("//label[text()= 'Business']");
+    }
+
+    public WebElement getDeliveryBtn() {
+        return getElementByXpath("//label[text()= 'Delivery']");
+    }
 }
