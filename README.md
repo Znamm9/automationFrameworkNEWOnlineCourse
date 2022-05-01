@@ -14,3 +14,8 @@ mvn -Denv=qa2 test
 ```bash
 mvn -Dslow_mo=300 test
 ```
+### If you want to start all tests, write in the console
+Example
+```bash
+mvn -DsuiteXml=suite.xml test
+```
