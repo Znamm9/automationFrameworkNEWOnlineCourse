@@ -311,4 +311,18 @@ public class HomePage extends BasePage {
     public WebElement getStillwaterBtn() {
         return getElementByXpath("//a[contains(text(), 'Stillwater, OK')]");
     }
+
+    public WebElement getBaltimoreBtn() { return getElementByXpath("//a[contains(text(),'Baltimore, MD')]");}
+
+    public WebElement getCollegeParkBtn() { return getElementByXpath("//a[contains(text(),'College Park, MD')]");}
+
+    public WebElement getHyattsvilleBtn() { return getElementByXpath("//a[contains(text(),'Hyattsville, MD')]");}
+
+    public WebElement getRockvilleBtn() { return getElementByXpath("//a[contains(text(), 'Rockville, MD')]");}
+
+    public WebElement getChampaignBtn() { return getElementByXpath("//a[contains(text(),'Champaign, IL')]");}
+
+    public WebElement getChicagoBtn() { return getElementByXpath("//a[contains(text(),'Chicago, IL')]");}
+
+    public WebElement getDeKalbBtn() { return getElementByXpath("//a[contains(text(),'DeKalb')]");}
 }
