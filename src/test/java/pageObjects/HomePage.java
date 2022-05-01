@@ -311,4 +311,8 @@ public class HomePage extends BasePage {
     public WebElement getStillwaterBtn() {
         return getElementByXpath("//a[contains(text(), 'Stillwater, OK')]");
     }
+
+    public WebElement getEnterAddress() {
+        return getElementByXpath("//a[@id='enter-address-btn']");
+    }
 }
