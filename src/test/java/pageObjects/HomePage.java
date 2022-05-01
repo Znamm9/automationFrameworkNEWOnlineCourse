@@ -280,6 +280,7 @@ public class HomePage extends BasePage {
     public WebElement appStoryLinkEatSt() {
         return driver.findElement(By.xpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']"));
     }
+
     public WebElement getRichmondBtn() {
         return getElementByXpath("//a[contains(text(), 'Richmond, VA')]");
     }
