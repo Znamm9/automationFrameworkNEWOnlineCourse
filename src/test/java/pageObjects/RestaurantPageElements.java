@@ -3,29 +3,41 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RestaurantPageElements extends BasePage {
     public RestaurantPageElements(WebDriver driver) {
         super(driver);
     }
 
-    public void searchNameInput() {
-        driver.findElement(By.xpath("//input[@id='input-food-search']")).sendKeys("New York");
+    public WebElement searchHeaderInput() {
+        return waitLocatorPage("//div[@class='autocomplete ']/input");
     }
 
-    public WebElement searchRestaurants() {
-        return driver.findElement(By.xpath("//a[contains(text(), 'Happy Times Cafe')]"));
+    public WebElement getMenuRestoranBlock() {
+        return waitLocatorPage("//div[@class='menu-list ng-scope']");
     }
 
-    public WebElement searchOmelettes() {
-        return driver.findElement(By.xpath("//h2[contains(text(), 'Omelettes')]"));
+    public WebElement searchContainsTextByElemen(String element, String name) {
+        String locator = "//" + element + "[contains(text(),'" + name + "')]";
+        return waitLocatorPage(locator);
     }
 
-    public WebElement CheckSearchMenu() {
-        return driver.findElement(By.xpath("//span[contains(text(), 'Bel Air Omelette')]"));
+    public WebElement getReviewsBlock(){
+        return waitLocatorPage("//div[@id='tt-reviews-list']");
     }
 
-    public WebElement clickSearchAttempt() {
-        return driver.findElement(By.xpath("//a[@id='enter-address-btn']"));
+    public WebElement getTitleRestaurant(){
+        return  waitLocatorPage("//ul[@class='restaurant-info--menu']/li/h1");
     }
+
+    public WebElement selectFirstElementSearch(){
+        return  waitLocatorPage("//li[contains(text(), 'Chicken')]");
+    }
+
+    public WebElement getListBlockRestaurants(){
+        return  waitLocatorPage("//div[@class='restaurants-list_container']");
+    }
+
 }
