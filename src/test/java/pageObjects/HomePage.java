@@ -311,4 +311,12 @@ public class HomePage extends BasePage {
     public WebElement getStillwaterBtn() {
         return getElementByXpath("//a[contains(text(), 'Stillwater, OK')]");
     }
+
+    public WebElement getFacebookBtn() {
+        return getElementByXpath("//a[@class='es-footer__icon es-footer__icon--facebook']");
+    }
+
+    public WebElement getTwitterBtn() {
+        return getElementByXpath("//a[@class='es-footer__icon es-footer__icon--twitter']");
+    }
 }
