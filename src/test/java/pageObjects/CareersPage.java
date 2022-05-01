@@ -26,6 +26,7 @@ public class CareersPage extends BasePage {
         return getElementByXpath("//*[@class='delivery-perks padding-top-40 flex-4 container--fluid margin-right-40']");
     }
 
+
     public List<WebElement> getListMadisonWi() {
         return getElementsByXpath("//*[contains(text(),'Marketing & Community Relations Intern - Madison, WI')]");
     }
@@ -36,5 +37,25 @@ public class CareersPage extends BasePage {
 
     public WebElement textTabsForJob() {
         return getElementByXpath("//*[@class='records-container']");
+      
+    public WebElement getTechBtn() {
+        return getElementByXpath("//label[text()= 'Tech']");
+    }
+
+    public WebElement getCreativeBtn() {
+        return getElementByXpath("//label[text()= 'Creative']");
+    }
+
+    public WebElement getCulinaryBtn() {
+        return getElementByXpath("//label[text()= 'Culinary']");
+    }
+
+    public WebElement getBusinessBtn() {
+        return getElementByXpath("//label[text()= 'Business']");
+    }
+
+    public WebElement getDeliveryBtn() {
+        return getElementByXpath("//label[text()= 'Delivery']");
+
     }
 }
