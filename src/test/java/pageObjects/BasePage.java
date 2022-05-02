@@ -3,7 +3,7 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
+import java.util.ArrayList;
 import java.util.List;
 
 public class BasePage {
@@ -54,5 +54,13 @@ public class BasePage {
 
     public WebElement getLoadMoreBtn() {
         return driver.findElement(By.xpath("//button[@class='btn btn--orange']"));
+    }
+
+    public List<String> getTabs() {
+        return new ArrayList<>(driver.getWindowHandles());
+    }
+
+    public WebDriver switchTabs(String tab) {
+        return driver.switchTo().window(tab);
     }
 }
