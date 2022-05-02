@@ -57,4 +57,17 @@ public class TestRestaurantsPage extends TestInit {
         Assert.assertTrue(getElementByXpath("//input[@id='filter-Order Ahead']/..").isDisplayed());
     }
 
+    @Test
+    public void searchKansas() {
+        driver.get("https://qa2.eatstreet.com/");
+        getElementByXpath("//input[@id='input-food-search']").sendKeys("Kansas City Restaurants, WI\n");
+        getElementByXpath("//a[@id='enter-address-btn']").click();
+        getElementByXpath("//a[@id='find-restaurants']").click();
+
+        waitTILLELelementContainsText("//h1", "Kansas City Restaurants That Deliver & Takeout");
+
+        Assert.assertTrue(getElementByXpath("//h1").getText().contains("Kansas City Restaurants That Deliver & Takeout"));
+        Assert.assertTrue(getElementByXpath("//input[@id='filters-checkbox-delivery']").isDisplayed());
+        Assert.assertTrue(getElementByXpath("//input[@id='filters-checkbox-takeout']").isDisplayed());
+    }
 }
