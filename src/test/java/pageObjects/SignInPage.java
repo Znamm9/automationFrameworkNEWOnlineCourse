@@ -36,7 +36,8 @@ public class SignInPage extends BasePage {
     public WebElement getSignBtn() {
         return getElementByXpath("//button[@id='signin']");
     }
-    public WebElement messageError(){
+
+    public WebElement messageError() {
         return getElementByXpath("//div[@id='email-validation-tag']");
     }
 
