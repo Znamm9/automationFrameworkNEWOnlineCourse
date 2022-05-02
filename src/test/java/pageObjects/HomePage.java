@@ -280,6 +280,7 @@ public class HomePage extends BasePage {
     public WebElement appStoryLinkEatSt() {
         return driver.findElement(By.xpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']"));
     }
+
     public WebElement getRichmondBtn() {
         return getElementByXpath("//a[contains(text(), 'Richmond, VA')]");
     }
@@ -302,6 +303,34 @@ public class HomePage extends BasePage {
 
     public WebElement getDeliveryBtn() {
         return getElementByXpath("//label[contains(text(), 'Delivery')]");
+    }
+
+    public WebElement getOklahomaCityBtn() {
+        return getElementByXpath("//a[contains(text(), 'Oklahoma City, OK')]");
+    }
+
+    public WebElement getStillwaterBtn() {
+        return getElementByXpath("//a[contains(text(), 'Stillwater, OK')]");
+    }
+
+    public WebElement getEnterAddress() {
+        return getElementByXpath("//a[@id='enter-address-btn']");
+    }
+
+    public WebElement getFacebookBtn() {
+        return getElementByXpath("//a[@class='es-footer__icon es-footer__icon--facebook']");
+    }
+
+    public WebElement getTwitterBtn() {
+        return getElementByXpath("//a[@class='es-footer__icon es-footer__icon--twitter']");
+    }
+
+    public WebElement getLasVegasBtn() {
+        return getElementByXpath("//a[text()= 'Las Vegas, NV']");
+    }
+
+    public WebElement getBurgerOptionBtn() {
+        return getElementByXpath("//button[contains(text(), 'View all Burger options')]");
     }
 
     public WebElement trendingArticles() {
