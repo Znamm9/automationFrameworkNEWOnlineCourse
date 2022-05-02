@@ -313,6 +313,18 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[contains(text(), 'Stillwater, OK')]");
     }
 
+    public WebElement getEnterAddress() {
+        return getElementByXpath("//a[@id='enter-address-btn']");
+    }
+
+    public WebElement getFacebookBtn() {
+        return getElementByXpath("//a[@class='es-footer__icon es-footer__icon--facebook']");
+    }
+
+    public WebElement getTwitterBtn() {
+        return getElementByXpath("//a[@class='es-footer__icon es-footer__icon--twitter']");
+    }
+
     public WebElement getLasVegasBtn() {
         return getElementByXpath("//a[text()= 'Las Vegas, NV']");
     }

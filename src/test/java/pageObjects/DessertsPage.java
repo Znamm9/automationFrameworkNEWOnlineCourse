@@ -19,4 +19,12 @@ public class DessertsPage extends BasePage {
     public boolean checkDessertsStenenPoint() {
         return getElementByXpath("//h1[@class='restaurants-list_header ng-binding ng-scope']").isDisplayed();
     }
+
+    public WebElement getSearchBtn() {
+        return getElementByXpath("//input[@id='search-autocomplete']");
+    }
+
+    public WebElement getDessertsOption() {
+        return getElementByXpath("//li[contains(text(), 'dessert')]");
+    }
 }
