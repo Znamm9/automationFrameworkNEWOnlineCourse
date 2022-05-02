@@ -317,6 +317,10 @@ public class HomePage extends BasePage {
         return getElementByXpath("//a[@class='es-footer__icon es-footer__icon--facebook']");
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> adb58a4a368905224ef4372b9ffb6829ecd138b5
     public WebElement getDeliveryBtn() {
         return getElementByXpath("//label[contains(text(), 'Delivery')]");
     }
