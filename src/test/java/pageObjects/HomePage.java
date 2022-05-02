@@ -332,4 +332,8 @@ public class HomePage extends BasePage {
     public WebElement getBurgerOptionBtn() {
         return getElementByXpath("//button[contains(text(), 'View all Burger options')]");
     }
+
+    public WebElement checklv() {
+        return getElementByXpath("//h1[contains(text(), 'Las Vegas Restaurants That Deliver & Takeout')]");
+    }
 }
