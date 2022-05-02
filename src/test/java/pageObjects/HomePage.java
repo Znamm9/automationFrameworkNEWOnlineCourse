@@ -334,7 +334,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getLVAdress() {
-        return getElementByXpath("//li[contains(text(), 'Las Vegas, Nevada, USA')]");
+        return getElementsByXpath("//li[contains(text(), 'Las Vegas, Nevada, USA')]").get(0);
     }
 
     public WebElement checklv() {
