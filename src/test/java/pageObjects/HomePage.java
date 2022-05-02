@@ -280,6 +280,7 @@ public class HomePage extends BasePage {
     public WebElement appStoryLinkEatSt() {
         return driver.findElement(By.xpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']"));
     }
+
     public WebElement getRichmondBtn() {
         return getElementByXpath("//a[contains(text(), 'Richmond, VA')]");
     }
@@ -318,5 +319,13 @@ public class HomePage extends BasePage {
 
     public WebElement getTwitterBtn() {
         return getElementByXpath("//a[@class='es-footer__icon es-footer__icon--twitter']");
+    }
+  
+    public WebElement getLasVegasBtn() {
+        return getElementByXpath("//a[text()= 'Las Vegas, NV']");
+    }
+
+    public WebElement getBurgerOptionBtn() {
+        return getElementByXpath("//button[contains(text(), 'View all Burger options')]");
     }
 }
