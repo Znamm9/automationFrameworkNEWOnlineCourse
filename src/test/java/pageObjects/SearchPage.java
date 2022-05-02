@@ -35,5 +35,8 @@ public class SearchPage extends BasePage {
     public int amountOfCheckBtns() {
         return getChecksBtns().size();
     }
-}
 
+    public WebElement getLVRestaurantText() {
+        return getElementByXpath("//h1[contains(text(), 'Las Vegas Restaurants')]");
+    }
+}
