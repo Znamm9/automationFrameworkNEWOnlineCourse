@@ -18,6 +18,6 @@ public class CheckGetFed extends TestInit {
         GetFedPage getFedPage = new GetFedPage(driver);
         getFedPage.GetFedPage().click();
 
-        Assert.assertTrue(homePage. getCheckGetFedBtn());
+        Assert.assertTrue(homePage. getCheckGetFedBtn().isDisplayed());
     }
 }
