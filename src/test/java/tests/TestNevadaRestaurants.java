@@ -14,7 +14,7 @@ public class TestNevadaRestaurants extends TestInit {
         homePage.getGotItBtn().click();
         homePage.getAddressField().sendKeys("Las Vegas, Nevada, USA");
         sleep(2);
-        homePage.getLVAdress().click();
+        homePage.getFedBtn().click();
 
         waitTILLELelementContainsText("//h1", "Las Vegas Restaurants That Deliver & Takeout");
 
