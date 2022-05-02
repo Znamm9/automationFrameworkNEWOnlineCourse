@@ -303,4 +303,36 @@ public class HomePage extends BasePage {
     public WebElement getDeliveryBtn() {
         return getElementByXpath("//label[contains(text(), 'Delivery')]");
     }
+
+    public WebElement trendingArticles() {
+        return getElementByXpath("//h2[contains(text(), 'Trending Articles')]");
+    }
+
+    public WebElement howDoICancelMyOrder() {
+        return getElementByXpath("//span[contains(text(), 'How do I cancel my order?')]");
+    }
+
+    public WebElement whereIsMyOrder() {
+        return getElementByXpath("//span[contains(text(), 'How do I cancel my order?')]");
+    }
+
+    public WebElement iNeverReceivedMyEatStreetOrder() {
+        return getElementByXpath("//span[contains(text(), 'How do I cancel my order?')]");
+    }
+
+    public WebElement myOrderWasMissingAnItemIncorrectOrder() {
+        return getElementByXpath("//span[contains(text(), 'My order was missing ')]");
+    }
+
+    public WebElement canIUpdateAnOrderAfterPlacingIt() {
+        return getElementByXpath("//span[contains(text(), 'Can I update an order')]");
+    }
+
+    public WebElement whyWasMyOrderCancelled() {
+        return getElementByXpath("//span[contains(text(), 'Why was my order')]");
+    }
+
+    public WebElement whyWasMyOrderBeenDealyed() {
+        return getElementByXpath("//span[contains(text(), 'Why has my order')]");
+    }
 }
