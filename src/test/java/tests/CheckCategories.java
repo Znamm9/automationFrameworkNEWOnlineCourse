@@ -25,6 +25,6 @@ public class CheckCategories extends TestInit {
         String b = searchPage.getAmountOfRestourants();
 
         Assert.assertEquals(a, 53);
-        Assert.assertTrue(b.contains("8"));
+        Assert.assertFalse(b.contains("No available restaurants"));
     }
 }
