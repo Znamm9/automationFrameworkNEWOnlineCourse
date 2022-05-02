@@ -39,7 +39,22 @@ public class TestRestaurantsPage extends TestInit {
         Assert.assertTrue(getElementByXpath("//input[@id='filters-checkbox-delivery']").isDisplayed());
         Assert.assertTrue(getElementByXpath("//input[@id='filters-checkbox-takeout']").isDisplayed());
         Assert.assertTrue(getElementByXpath("//input[@id='filter-Free Delivery']/..").isDisplayed());
-        Assert.assertTrue(getElementByXpath("//input[@id='filter-Order Ahead']/..").isDisplayed());
         Assert.assertTrue(getElementByXpath("//input[@id='filter-Specials']/..").isDisplayed());
     }
+
+    @Test
+    public void searchIllinois() {
+        driver.get("https://qa2.eatstreet.com/");
+        getElementByXpath("//input[@id='input-food-search']").sendKeys("Illinois, WI\n");
+        getElementByXpath("//a[@id='enter-address-btn']").click();
+        getElementByXpath("//a[@id='find-restaurants']").click();
+
+        waitTILLELelementContainsText("//h1", "Peoria Restaurants");
+
+        Assert.assertTrue(getElementByXpath("//h1").getText().contains("Peoria Restaurants"));
+        Assert.assertTrue(getElementByXpath("//input[@id='filters-checkbox-delivery']").isDisplayed());
+        Assert.assertTrue(getElementByXpath("//input[@id='filters-checkbox-takeout']").isDisplayed());
+        Assert.assertTrue(getElementByXpath("//input[@id='filter-Order Ahead']/..").isDisplayed());
+    }
+
 }
