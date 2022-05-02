@@ -37,11 +37,19 @@ public class SignInPage extends BasePage {
         return getElementByXpath("//button[@id='signin']");
     }
 
-    public WebElement messageError() {
+    public WebElement messageErrorEmail() {
         return getElementByXpath("//div[@id='email-validation-tag']");
     }
 
     public WebElement signInBtn() {
         return getElementByXpath("//button[@id='signin']");
+    }
+
+    public WebElement messageIncorrect(){
+        return getElementByXpath("//span[text()= 'The login information you entered is incorrect.']");
+    }
+
+    public WebElement messageErrorPassword(){
+        return getElementByXpath("//div[@id='password-validation-tag']");
     }
 }
