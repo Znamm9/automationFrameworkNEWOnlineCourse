@@ -333,10 +333,6 @@ public class HomePage extends BasePage {
         return getElementByXpath("//button[contains(text(), 'View all Burger options')]");
     }
 
-    public WebElement getLVAdress() {
-        return getElementByXpath("//li[contains(text(), 'Las Vegas, Nevada, USA')]");
-    }
-
     public WebElement checklv() {
         return getElementByXpath("//h1[contains(text(), 'Las Vegas Restaurants That Deliver & Takeout')]");
     }
