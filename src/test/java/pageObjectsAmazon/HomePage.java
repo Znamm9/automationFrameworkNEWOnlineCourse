@@ -44,4 +44,8 @@ public class HomePage extends BasePage {
     public WebElement getSearchField() {
         return getElementByXpath("//input[@id='twotabsearchtextbox']");
     }
+
+    public WebElement getBtnAutomative(){
+        return getElementByXpath("//option[contains(text(), 'Automotive')]");
+    }
 }
