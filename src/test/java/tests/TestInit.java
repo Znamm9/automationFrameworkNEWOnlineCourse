@@ -15,7 +15,11 @@ import java.time.Duration;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class TestInit {
-    WebDriver driver;
+    public WebDriver driver;
+
+    public void openUrl(String site) {
+        driver.get(site);
+    }
 
     public void sleep(int seconds) {
         try {
