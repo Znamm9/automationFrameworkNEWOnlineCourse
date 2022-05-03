@@ -17,9 +17,9 @@ public class ElectronicsTest extends TestInit {
         openUrl("https://www.amazon.com/");
         homePage.getBtnAllBurgerMenu().click();
         homePage.getBtnElectronics().click();
-        sleep(3);
+        sleep(4);
         homePage.getBtnAccessoriesandSupplies().click();
-        sleep(3);
+        sleep(4);
 
         Assert.assertTrue(accessoriesAndSuppliesPage.isResultsText().isDisplayed());
 
