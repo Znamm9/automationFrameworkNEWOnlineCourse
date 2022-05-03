@@ -9,11 +9,11 @@ public class BeautyPersonalCarePage extends BasePage {
         super(driver);
     }
 
-    public WebElement getRadioBtbNarwey() {
+    public WebElement getRadioBtbBradley() {
         return getElementsByXpath("//i[@class='a-icon a-icon-checkbox']").get(0);
     }
 
     public boolean checkUrlBradley() {
-        return driver.getCurrentUrl().contains("Narwey");
+        return driver.getCurrentUrl().contains("AVera+Bradley");
     }
 }
