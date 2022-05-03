@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageObjects.BasePage;
 
-public class HomePage extends BasePage {
+public class  HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -31,5 +31,13 @@ public class HomePage extends BasePage {
 
     public WebElement getBtnAccessoriesandSupplies() {
         return getElementByXpath("//a[contains(text(), 'Accessories & Supplies')]");
+    }
+
+    public WebElement getBtnHelloSignIn() {
+        return getElementByXpath("//input[@id='ap_password']");
+    }
+
+    public WebElement isHelloYuriyBtn() {
+        return getElementByXpath("//span[@id='nav-link-accountList-nav-line-1']");
     }
 }
