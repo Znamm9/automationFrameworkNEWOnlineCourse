@@ -20,4 +20,14 @@ public class HomePage extends BasePage {
     public WebElement getBtnSearch() {
         return getElementByXpath("//input[@id='nav-search-submit-button']");
     }
+
+    public void navigate(){
+        driver.get("https://www.amazon.com/");
+    }
+
+    public WebElement getBtnComputersInList() {
+        return getElementByXpath("//option[@value='search-alias=computers-intl-ship']");
+    }
+
+
 }
