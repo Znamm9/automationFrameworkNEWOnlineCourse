@@ -40,4 +40,8 @@ public class HomePage extends BasePage {
     public WebElement isHelloYuriyBtn() {
         return getElementByXpath("//span[@id='nav-link-accountList-nav-line-1']");
     }
+
+    public WebElement getSearchField() {
+        return getElementByXpath("//input[@id='twotabsearchtextbox']");
+    }
 }
