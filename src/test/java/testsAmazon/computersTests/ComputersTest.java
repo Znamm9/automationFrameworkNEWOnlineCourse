@@ -1,4 +1,4 @@
-package testsAmazon;
+package testsAmazon.computersTests;
 
 import tests.TestInit;
 
