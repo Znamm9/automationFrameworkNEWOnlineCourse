@@ -13,6 +13,7 @@ public class ComputersPage extends BasePage {
     }
 
     public void clickBtnSamsungInList() {
-        getElementByXpath("//li[@id='p_89/SAMSUNG']").click();
+        getElementsByXpath("//div[@class='a-checkbox a-checkbox-fancy s-navigation-checkbox aok-float-left']").get(2).click();
     }
+
 }
