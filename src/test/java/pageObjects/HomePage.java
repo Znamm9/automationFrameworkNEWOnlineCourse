@@ -301,10 +301,6 @@ public class HomePage extends BasePage {
         return getElementByXpath("//select[@onchange = 'location = this.value;']").isDisplayed();
     }
 
-    public WebElement getDeliveryBtn() {
-        return getElementByXpath("//label[contains(text(), 'Delivery')]");
-    }
-
     public WebElement getOklahomaCityBtn() {
         return getElementByXpath("//a[contains(text(), 'Oklahoma City, OK')]");
     }
@@ -319,6 +315,14 @@ public class HomePage extends BasePage {
 
     public WebElement getFacebookBtn() {
         return getElementByXpath("//a[@class='es-footer__icon es-footer__icon--facebook']");
+    }
+
+    public WebElement getDeliveryBtn() {
+        return getElementByXpath("//label[contains(text(), 'Delivery')]");
+    }
+
+    public void clickNewYorkRestaurants() {
+        getElementByXpath("//a[contains(text(), 'New York City, NY')]").click();
     }
 
     public WebElement getTwitterBtn() {
