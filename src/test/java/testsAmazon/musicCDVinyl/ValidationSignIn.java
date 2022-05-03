@@ -15,8 +15,11 @@ public class ValidationSignIn extends TestInit {
         homePage.getBtnAllBurgerMenu().click();
         homePage.getBtnHelloSignIn().click();
         SignInPageA signInPageA = new SignInPageA(driver);
-        signInPageA.inputEmail().sendKeys("18cherniak.yuriy18@gmail.com\n");
-        signInPageA.inputPassward().sendKeys("qwerty123\n");
+        sleep(3);
+        signInPageA.inputEmail("18cherniak.yuriy18@gmail.com\n");
+        sleep(3);
+        signInPageA.inputPassword("qwerty123\n");
+        sleep(2);
 
         Assert.assertTrue(homePage.isHelloYuriyBtn().isDisplayed());
     }

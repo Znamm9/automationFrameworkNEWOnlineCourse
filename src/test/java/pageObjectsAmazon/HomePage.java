@@ -34,7 +34,7 @@ public class  HomePage extends BasePage {
     }
 
     public WebElement getBtnHelloSignIn() {
-        return getElementByXpath("//input[@id='ap_password']");
+        return getElementByXpath("//div[@id='hmenu-customer-name']");
     }
 
     public WebElement isHelloYuriyBtn() {
