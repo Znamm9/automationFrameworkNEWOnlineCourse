@@ -32,4 +32,16 @@ public class HomePage extends BasePage {
     public WebElement getBtnAccessoriesandSupplies() {
         return getElementByXpath("//a[contains(text(), 'Accessories & Supplies')]");
     }
+
+    public WebElement getBtnHelloSignIn() {
+        return getElementByXpath("//div[@id='hmenu-customer-name']");
+    }
+
+    public WebElement isHelloYuriyBtn() {
+        return getElementByXpath("//span[@id='nav-link-accountList-nav-line-1']");
+    }
+
+    public WebElement getSearchField() {
+        return getElementByXpath("//input[@id='twotabsearchtextbox']");
+    }
 }
