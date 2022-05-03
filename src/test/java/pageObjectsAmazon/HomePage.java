@@ -20,4 +20,16 @@ public class HomePage extends BasePage {
     public WebElement getBtnSearch() {
         return getElementByXpath("//input[@id='nav-search-submit-button']");
     }
+
+    public WebElement getBtnAllBurgerMenu(){
+        return getElementByXpath("//a[@id='nav-hamburger-menu']");
+    }
+
+    public WebElement getBtnElectronics() {
+        return getElementByXpath("//div[contains(text(), 'Electronics')]");
+    }
+
+    public WebElement getBtnAccessoriesandSupplies() {
+        return getElementByXpath("//a[contains(text(), 'Accessories & Supplies')]");
+    }
 }
