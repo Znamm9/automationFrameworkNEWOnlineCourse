@@ -24,4 +24,18 @@ public class searchAllAmazon extends TestInit {
         Assert.assertTrue(searchAllPageElements.checkAnotation().isDisplayed());
         Assert.assertTrue(searchAllPageElements.checkRentButton().isDisplayed());
     }
+
+    @Test
+    public void findFilm() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://www.amazon.com/");
+        SearchAllPageElements searchAllPageElements = new SearchAllPageElements(driver);
+
+        searchAllPageElements.getsearchDropdownBox().click();
+        searchAllPageElements.getsearchMovies().click();
+        searchAllPageElements.getsearchDropdownBox().click();
+        searchAllPageElements.getsearchButton().click();
+
+        Assert.assertTrue(searchAllPageElements.checkFeatureddeals().isDisplayed());
+    }
 }
