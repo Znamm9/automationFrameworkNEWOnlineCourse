@@ -1,4 +1,4 @@
-package testsAmazon;
+package testsAmazon.Movies;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
