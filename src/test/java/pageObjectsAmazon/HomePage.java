@@ -52,4 +52,12 @@ public class HomePage extends BasePage {
     public WebElement getSearchField() {
         return getElementByXpath("//input[@id='twotabsearchtextbox']");
     }
+
+    public WebElement getSignInBtn() {
+        return getElementByXpath("//span[@id='nav-link-accountList-nav-line-1']");
+    }
+
+    public WebElement getBohdanHelloBtn() {
+        return getElementByXpath("//span[text()= 'Hello, Bohdan']");
+    }
 }
