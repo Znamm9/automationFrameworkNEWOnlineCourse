@@ -23,7 +23,15 @@ public class HomePage extends BasePage {
         return getElementByXpath("//input[@id='nav-search-submit-button']");
     }
 
-    public WebElement getBtnAllBurgerMenu(){
+    public void navigate() {
+        driver.get("https://www.amazon.com/");
+    }
+
+    public WebElement getBtnComputersInList() {
+        return getElementByXpath("//option[@value='search-alias=computers-intl-ship']");
+    }
+
+    public WebElement getBtnAllBurgerMenu() {
         return getElementByXpath("//a[@id='nav-hamburger-menu']");
     }
 
@@ -57,5 +65,13 @@ public class HomePage extends BasePage {
 
     public WebElement getBtnAll() {
         return getElementByXpath("//i[@class='hm-icon nav-sprite']");
+    }
+  
+    public WebElement getSignInBtn() {
+        return getElementByXpath("//span[@id='nav-link-accountList-nav-line-1']");
+    }
+
+    public WebElement getBohdanHelloBtn() {
+        return getElementByXpath("//span[text()= 'Hello, Bohdan']");
     }
 }
