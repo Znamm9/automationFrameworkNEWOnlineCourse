@@ -10,10 +10,11 @@ public class BeautyPersonalCarePage extends BasePage {
     }
 
     public WebElement getRadioBtbBradley() {
-        return getElementsByXpath("//i[@class='a-icon a-icon-checkbox']").get(0);
+        return getElementByXpath("//span[contains(text(), 'Vera Bradley')]");
     }
 
     public boolean checkUrlBradley() {
-        return driver.getCurrentUrl().contains("AVera+Bradley");
+        return driver.getCurrentUrl().contains("Vera-Bradley");
     }
 }
+
