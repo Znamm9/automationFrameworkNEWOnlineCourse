@@ -3,10 +3,16 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
+
 public class BasePage {
+
+    private static final int BASE_WAIT_TIME = 15;
 
     public WebDriver driver;
 
@@ -62,5 +68,10 @@ public class BasePage {
 
     public WebDriver switchTabs(String tab) {
         return driver.switchTo().window(tab);
+    }
+
+    public WebElement waitElementByXpath(String locator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(BASE_WAIT_TIME));
+        return wait.until(elementToBeClickable(By.xpath(locator)));
     }
 }
