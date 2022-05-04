@@ -37,4 +37,19 @@ public class FilterSort extends TestInit {
             Assert.assertTrue(auto.elementsProducts().get(i).getText().contains("Lynx"));
         }
     }
+
+    @Test
+    public void sort(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://www.amazon.com");
+        homePage.getBtnAllInHeader().click();
+        homePage.getBtnAutomative().click();
+        homePage.getBtnSearch().click();
+        Automotive auto = new Automotive(driver);
+        auto.getOilsFluids().click();
+        auto.sort3M().click();
+        for(int i = 0; i < auto.elementsProducts().size(); i++){
+            Assert.assertTrue(auto.elementsProducts().get(i).getText().contains("3M"));
+        }
+    }
 }

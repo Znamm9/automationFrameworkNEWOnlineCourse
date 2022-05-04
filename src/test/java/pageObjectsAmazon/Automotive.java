@@ -30,4 +30,11 @@ public class Automotive extends BasePage {
     public List<WebElement> elementsProducts(){
        return getElementsByXpath("//span[@class='a-size-base-plus a-color-base a-text-normal']");
     }
+    public WebElement getOilsFluids(){
+        return getElementByXpath("//span[text()='Oils & Fluids']");
+    }
+    public WebElement sort3M(){
+        return getElementByXpath("//span[text()='3M']");
+    }
+   // public List<WebElement>//span[@class='a-size-base-plus a-color-base a-text-normal']
 }
