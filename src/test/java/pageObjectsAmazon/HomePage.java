@@ -60,4 +60,7 @@ public class HomePage extends BasePage {
     public WebElement getBohdanHelloBtn() {
         return getElementByXpath("//span[text()= 'Hello, Bohdan']");
     }
+    public WebElement getBtnBooks() {
+        return getElementByXpath("//option[contains(text(), 'Books')]");
+    }
 }
