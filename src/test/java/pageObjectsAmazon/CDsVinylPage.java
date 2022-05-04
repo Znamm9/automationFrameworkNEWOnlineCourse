@@ -12,4 +12,8 @@ public class CDsVinylPage extends BasePage {
     public WebElement getOpenWebPlayer() {
         return getElementByXpath("//img[@alt='Play']");
     }
+
+    public WebElement bestSellersBtn() {
+        return getElementByXpath("//a[contains(text(), 'Best Sellers')]");
+    }
 }
