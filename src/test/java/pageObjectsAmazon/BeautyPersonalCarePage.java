@@ -9,11 +9,21 @@ public class BeautyPersonalCarePage extends BasePage {
         super(driver);
     }
 
-    public WebElement getRadioBtbNarwey() {
-        return getElementsByXpath("//i[@class='a-icon a-icon-checkbox']").get(0);
+    public WebElement getRadioBtbBradley() {
+        return getElementByXpath("//span[contains(text(), 'Vera Bradley')]");
     }
 
     public boolean checkUrlBradley() {
-        return driver.getCurrentUrl().contains("Narwey");
+        return driver.getCurrentUrl().contains("Vera-Bradley");
+    }
+
+    public WebElement clickBtnSort() {
+        return getElementByXpath("//span[@id='a-autoid-0-announce']");
+    }
+
+    public WebElement clickBtnPriceLowToHigh() {
+        return getElementByXpath("//a[@id='s-result-sort-select_1']");
     }
 }
+
+

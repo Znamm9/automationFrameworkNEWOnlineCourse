@@ -6,17 +6,17 @@ import pageObjectsAmazon.BeautyPersonalCarePage;
 import pageObjectsAmazon.HomePage;
 import tests.TestInit;
 
-public class SortingMakeupBagForBradleyBrands extends TestInit {
+public class SortingShampooByPrice extends TestInit {
 
     @Test
-    public void sortingMakeupBagForBradleyBrandsTest() {
+    public void sortingShampooByPrice() {
         HomePage homePage = new HomePage(driver);
         BeautyPersonalCarePage beautyPersonalCarePage = new BeautyPersonalCarePage(driver);
         openUrl("https://www.amazon.com/");
-        homePage.getSearchField().sendKeys("makeup bag\n");
-        beautyPersonalCarePage.getRadioBtbBradley().click();
+        homePage.getSearchField().sendKeys("shampoo\n");
+        beautyPersonalCarePage.clickBtnSort().click();
+        beautyPersonalCarePage.clickBtnPriceLowToHigh().click();
 
-        Assert.assertTrue(beautyPersonalCarePage.checkUrlBradley());
+        Assert.assertTrue(checkUrlTrue("price-asc-rank&qid"));
     }
 }
-
