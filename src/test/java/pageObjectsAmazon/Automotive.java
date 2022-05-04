@@ -1,8 +1,11 @@
 package pageObjectsAmazon;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageObjects.BasePage;
+
+import java.util.List;
 
 public class Automotive extends BasePage {
 
@@ -17,5 +20,14 @@ public class Automotive extends BasePage {
     }
     public WebElement getSortNewestArrivals(){
         return getElementByXpath("//a[@id='s-result-sort-select_4']");
+    }
+    public WebElement getTiresWheels(){
+        return getElementByXpath("//span[text()='Tires & Wheels']");
+    }
+    public WebElement getSortTriLynx(){
+        return getElementByXpath("//span[text()='Tri-Lynx']");
+    }
+    public List<WebElement> elementsProducts(){
+       return getElementsByXpath("//span[@class='a-size-base-plus a-color-base a-text-normal']");
     }
 }
