@@ -37,4 +37,12 @@ public class SearchAllPageElements extends BasePage {
     public WebElement checkRentButton() {
         return driver.findElement(By.xpath("//button[@class='_1ovr-S _15Ikr8 _20uSE4 _2X_Irl tvod-button av-button']"));
     }
+
+    public WebElement getsearchButton() {
+        return driver.findElement( By.xpath("//input[@id='nav-search-submit-button']"));
+    }
+
+    public WebElement checkFeatureddeals() {
+        return driver.findElement( By.xpath("//span[@class='a-size-extra-large a-color-base a-text-bold']"));
+    }
 }

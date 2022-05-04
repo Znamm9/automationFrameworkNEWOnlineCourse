@@ -16,5 +16,14 @@ public class BeautyPersonalCarePage extends BasePage {
     public boolean checkUrlBradley() {
         return driver.getCurrentUrl().contains("Vera-Bradley");
     }
+
+    public WebElement clickBtnSort() {
+        return getElementByXpath("//span[@id='a-autoid-0-announce']");
+    }
+
+    public WebElement clickBtnPriceLowToHigh() {
+        return getElementByXpath("//a[@id='s-result-sort-select_1']");
+    }
 }
+
 
