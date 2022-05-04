@@ -8,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import java.util.ArrayList;
 
 import java.time.Duration;
 
@@ -19,6 +18,10 @@ public class TestInit {
 
     public void openUrl(String site) {
         driver.get(site);
+    }
+
+    public boolean checkUrlTrue(String Url) {
+        return driver.getCurrentUrl().contains(Url);
     }
 
     public void sleep(int seconds) {
@@ -36,10 +39,10 @@ public class TestInit {
         driver.manage().window().maximize();
     }
 
-//    @AfterMethod
-//    public void after() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void after() {
+        driver.quit();
+    }
 
     int BASIC_TIME = 15;
 
