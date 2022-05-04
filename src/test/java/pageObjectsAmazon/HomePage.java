@@ -21,7 +21,15 @@ public class HomePage extends BasePage {
         return getElementByXpath("//input[@id='nav-search-submit-button']");
     }
 
-    public WebElement getBtnAllBurgerMenu(){
+    public void navigate() {
+        driver.get("https://www.amazon.com/");
+    }
+
+    public WebElement getBtnComputersInList() {
+        return getElementByXpath("//option[@value='search-alias=computers-intl-ship']");
+    }
+
+    public WebElement getBtnAllBurgerMenu() {
         return getElementByXpath("//a[@id='nav-hamburger-menu']");
     }
 
