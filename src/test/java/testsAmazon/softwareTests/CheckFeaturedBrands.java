@@ -23,6 +23,7 @@ public class CheckFeaturedBrands extends TestInit {
             softwarePage.getBtnsCheck().get(i).click();
             sleep(1);
         }
+        sleep(3);
         Assert.assertEquals(softwarePage.getBtnsChecked().size(), 4);
     }
 }
