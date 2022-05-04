@@ -10,7 +10,7 @@ import tests.TestInit;
 public class Baby extends TestInit {
 
     @Test
-    public void check(){
+    public void checkBabyStore(){
         HomePage homePage = new HomePage(driver);
         openUrl("https://www.amazon.com/");
         homePage.getBtnAllInHeader().click();
@@ -20,5 +20,4 @@ public class Baby extends TestInit {
 
         Assert.assertTrue(babyPage.theBabyStore().isDisplayed());
     }
-
 }
