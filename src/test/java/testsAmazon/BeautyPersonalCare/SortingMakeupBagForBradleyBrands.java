@@ -14,7 +14,7 @@ public class SortingMakeupBagForBradleyBrands extends TestInit {
         BeautyPersonalCarePage beautyPersonalCarePage = new BeautyPersonalCarePage(driver);
         openUrl("https://www.amazon.com/");
         homePage.getSearchField().sendKeys("makeup bag\n");
-        beautyPersonalCarePage.getRadioBtbNarwey().click();
+        beautyPersonalCarePage.getRadioBtbBradley().click();
 
         Assert.assertTrue(beautyPersonalCarePage.checkUrlBradley());
     }
