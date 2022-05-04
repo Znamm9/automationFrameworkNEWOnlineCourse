@@ -60,4 +60,8 @@ public class HomePage extends BasePage {
     public WebElement getBohdanHelloBtn() {
         return getElementByXpath("//span[text()= 'Hello, Bohdan']");
     }
+
+    public WebElement getBtnCameraPhoto() {
+        return getElementByXpath("//a[contains(text(), 'Camera & Photo')]");
+    }
 }
