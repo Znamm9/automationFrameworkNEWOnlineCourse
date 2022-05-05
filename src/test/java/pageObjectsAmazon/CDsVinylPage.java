@@ -16,4 +16,8 @@ public class CDsVinylPage extends BasePage {
     public WebElement bestSellersBtn() {
         return getElementByXpath("//a[contains(text(), 'Best Sellers')]");
     }
+
+    public WebElement childrenMusicBtn() {
+        return getElementByXpath("//a[@href='/gp/browse.html?rw_useCurrentProtocol=1&node=173425&ref_=mun_bb_childrens']");
+    }
 }
