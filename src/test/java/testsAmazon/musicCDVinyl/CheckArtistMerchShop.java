@@ -6,18 +6,18 @@ import pageObjectsAmazon.CDsVinylPage;
 import pageObjectsAmazon.HomePage;
 import tests.TestInit;
 
-public class CheckDepartmentOfChildrenMusic extends TestInit {
+public class CheckArtistMerchShop extends TestInit {
 
     @Test
-    public void checkDepartmentOfChildrenMusic() {
+    public void checkArtistMerchShop() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://www.amazon.com/ref=nav_logo");
         homePage.getBtnAllInHeader().click();
         homePage.getBtnMusicCDsVinyl().click();
         homePage.getBtnSearch().click();
         CDsVinylPage cDsVinylPage = new CDsVinylPage(driver);
-        cDsVinylPage.childrenMusicBtn().click();
+        cDsVinylPage.artistMerchShopBtn().click();
 
-        Assert.assertTrue(checkUrlTrue("childrens"));
+        Assert.assertTrue(checkUrlTrue("Artist-Merch-Shop"));
     }
 }
