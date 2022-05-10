@@ -79,15 +79,15 @@ public class HomePage extends BasePage {
     public WebElement getBtnCameraPhoto() {
         return getElementByXpath("//a[contains(text(), 'Camera & Photo')]");
 
-        public WebElement getSeeAllBtn () {
+        public WebElement getSeeAllBtn() {
             return getElementsByXpath("//div[text()= 'see all']").get(0);
         }
 
-        public WebElement getToysAndGamesBtn () {
+        public WebElement getToysAndGamesBtn() {
             return getElementByXpath("//div[text()= 'Toys and Games']");
         }
 
-        public WebElement getBuildingToysBtn () {
+        public WebElement getBuildingToysBtn() {
             return getElementByXpath("//a[text()= 'Building Toys']");
         }
     }
