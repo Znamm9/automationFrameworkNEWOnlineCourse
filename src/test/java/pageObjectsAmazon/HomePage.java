@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageObjects.BasePage;
 
+import java.util.List;
+
 public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
@@ -53,6 +55,18 @@ public class HomePage extends BasePage {
         return getElementByXpath("//input[@id='twotabsearchtextbox']");
     }
 
+    public WebElement getBtnSoftware() {
+        return getElementByXpath("//div[text()='Software']");
+    }
+
+    public List<WebElement> getBtnsSeeAll() {
+        return getElementsByXpath("//i[@class='nav-sprite hmenu-arrow-more']");
+    }
+
+    public WebElement getBtnAll() {
+        return getElementByXpath("//i[@class='hm-icon nav-sprite']");
+    }
+  
     public WebElement getSignInBtn() {
         return getElementByXpath("//span[@id='nav-link-accountList-nav-line-1']");
     }
@@ -61,7 +75,19 @@ public class HomePage extends BasePage {
         return getElementByXpath("//span[text()= 'Hello, Bohdan']");
     }
 
+
     public WebElement getBtnCameraPhoto() {
         return getElementByXpath("//a[contains(text(), 'Camera & Photo')]");
+
+        public WebElement getSeeAllBtn () {
+            return getElementsByXpath("//div[text()= 'see all']").get(0);
+        }
+
+        public WebElement getToysAndGamesBtn () {
+            return getElementByXpath("//div[text()= 'Toys and Games']");
+        }
+
+        public WebElement getBuildingToysBtn () {
+            return getElementByXpath("//a[text()= 'Building Toys']");
+        }
     }
-}
