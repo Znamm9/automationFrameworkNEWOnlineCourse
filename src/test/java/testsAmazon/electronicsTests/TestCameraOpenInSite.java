@@ -14,6 +14,7 @@ public class TestCameraOpenInSite extends TestInit {
         HomePage homePage = new HomePage(driver);
         homePage.navigate();
         homePage.getBtnAllBurgerMenu().click();
+        sleep(3);
         homePage.getBtnElectronics().click();
         sleep(4);
         homePage.getBtnCameraPhoto().click();
