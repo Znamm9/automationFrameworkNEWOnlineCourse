@@ -78,7 +78,7 @@ public class HomePage extends BasePage {
 
     public WebElement getBtnCameraPhoto() {
         return getElementByXpath("//a[contains(text(), 'Camera & Photo')]");
-
+    }
         public WebElement getSeeAllBtn() {
             return getElementsByXpath("//div[text()= 'see all']").get(0);
         }
