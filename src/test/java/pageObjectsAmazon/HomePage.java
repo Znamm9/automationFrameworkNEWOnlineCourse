@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageObjects.BasePage;
 
+import java.util.List;
+
 public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
@@ -51,6 +53,18 @@ public class HomePage extends BasePage {
 
     public WebElement getSearchField() {
         return getElementByXpath("//input[@id='twotabsearchtextbox']");
+    }
+
+    public WebElement getBtnSoftware() {
+        return getElementByXpath("//div[text()='Software']");
+    }
+
+    public List<WebElement> getBtnsSeeAll() {
+        return getElementsByXpath("//i[@class='nav-sprite hmenu-arrow-more']");
+    }
+
+    public WebElement getBtnAll() {
+        return getElementByXpath("//i[@class='hm-icon nav-sprite']");
     }
 
     public WebElement getSignInBtn() {
@@ -102,5 +116,13 @@ public class HomePage extends BasePage {
 
     public WebElement selectTovarInCart() {
         return getElementByXpath("//span[@class='a-truncate-cut']");
+    }
+
+    public WebElement getToysAndGamesBtn() {
+        return getElementByXpath("//div[text()= 'Toys and Games']");
+    }
+
+    public WebElement getBuildingToysBtn() {
+        return getElementByXpath("//a[text()= 'Building Toys']");
     }
 }
