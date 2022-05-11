@@ -60,4 +60,47 @@ public class HomePage extends BasePage {
     public WebElement getBohdanHelloBtn() {
         return getElementByXpath("//span[text()= 'Hello, Bohdan']");
     }
+
+    public WebElement getAllBtn() {
+        return getElementByXpath("//i[@class='hm-icon nav-sprite']");
+    }
+
+    public WebElement getHomeAndKitcenBtn() {
+        return getElementByXpath("//div[contains(text(), 'Home and Kitchen')]");
+    }
+
+    public WebElement getSeeAllBtn() {
+        return getElementByXpath("//div[contains(text(), 'see all')]");
+    }
+
+    public WebElement getKidsHomeStore() {
+        return getElementByXpath("//ul[@class='hmenu hmenu-visible hmenu-translateX']//li[3]//a[1]");
+    }
+
+    public WebElement seeAllBuyingOptions() {
+        return getElementByXpath("//a[contains(text(), ' See All Buying Options ')]");
+    }
+
+    public WebElement getAddToCart() {
+        return getElementByXpath("//span[@id='a-autoid-2-offer-2']//input[@name='submit.addToCart']");
+    }
+
+    public WebElement selectTovar() {
+        return getElementByXpath("//span[contains(text(), 'HoMedics White Noise Sound')]");
+    }
+
+    public WebElement closeAddToCartWindow() {
+        return getElementByXpath("//i[@aria-label= 'aod-close']");
+    }
+
+    public WebElement openCart() {
+        return getElementByXpath("//div[@id='nav-cart-count-container']");
+    }
+    public WebElement tovarInCart(){
+        return getElementByXpath("//span[@class='a-truncate-cut']");
+    }
+
+    public WebElement selectTovarInCart() {
+        return getElementByXpath("//span[@class='a-truncate-cut']");
+    }
 }
