@@ -24,4 +24,8 @@ public class CDsVinylPage extends BasePage {
     public WebElement artistMerchShopBtn() {
         return getElementByXpath("//a[contains(text(), 'Artist Merch Shop')]");
     }
+
+    public WebElement getVinylBtn() {
+        return getElementByXpath("//span[text()= 'Vinyl']");
+    }
 }

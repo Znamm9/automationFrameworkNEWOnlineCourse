@@ -66,7 +66,7 @@ public class HomePage extends BasePage {
     public WebElement getBtnAll() {
         return getElementByXpath("//i[@class='hm-icon nav-sprite']");
     }
-  
+
     public WebElement getSignInBtn() {
         return getElementByXpath("//span[@id='nav-link-accountList-nav-line-1']");
     }
@@ -85,5 +85,9 @@ public class HomePage extends BasePage {
 
     public WebElement getBuildingToysBtn() {
         return getElementByXpath("//a[text()= 'Building Toys']");
+    }
+
+    public void inputTextToSearch(String search) {
+        getElementByXpath("//input[@id='twotabsearchtextbox']").sendKeys(search);
     }
 }
