@@ -12,4 +12,8 @@ public class ToysAndGamesPage extends BasePage {
     public WebElement getResultString() {
         return getElementByXpath("//span[text()= 'RESULTS']");
     }
+
+    public WebElement getHurryPoterBtn() {
+        return getElementByXpath("//span[text()= 'Harry Potter']");
+    }
 }
