@@ -18,6 +18,6 @@ public class CheckListOfNewReleases extends TestInit {
         CDsVinylPage cDsVinylPage = new CDsVinylPage(driver);
         cDsVinylPage.getNewReleasesBtn().click();
 
-        Assert.assertTrue(checkUrlTrue("mushead_newreleases"));
+        Assert.assertEquals(homePage.isListOfNewReleases().size(),12);
     }
 }

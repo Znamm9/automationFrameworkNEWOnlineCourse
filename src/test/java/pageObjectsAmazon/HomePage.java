@@ -1,5 +1,6 @@
 package pageObjectsAmazon;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageObjects.BasePage;
@@ -89,5 +90,9 @@ public class HomePage extends BasePage {
 
     public void inputTextToSearch(String search) {
         getElementByXpath("//input[@id='twotabsearchtextbox']").sendKeys(search);
+    }
+
+    public List<WebElement> isListOfNewReleases() {
+        return getElementsByXpath("//span[@class='a-size-base-plus a-color-base a-text-normal']");
     }
 }
