@@ -20,4 +20,12 @@ public class CDsVinylPage extends BasePage {
     public WebElement childrenMusicBtn() {
         return getElementByXpath("//a[@href='/gp/browse.html?rw_useCurrentProtocol=1&node=173425&ref_=mun_bb_childrens']");
     }
+
+    public WebElement artistMerchShopBtn() {
+        return getElementByXpath("//a[contains(text(), 'Artist Merch Shop')]");
+    }
+
+    public WebElement getVinylBtn() {
+        return getElementByXpath("//span[text()= 'Vinyl']");
+    }
 }
