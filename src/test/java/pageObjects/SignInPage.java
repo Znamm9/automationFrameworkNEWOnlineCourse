@@ -44,4 +44,8 @@ public class SignInPage extends BasePage {
     public WebElement signInBtn() {
         return getElementByXpath("//button[@id='signin']");
     }
+
+    public WebElement getHeaderTitle() {
+        return getElementByXpath("//span[contains(text(),'Sign In')]");
+    }
 }

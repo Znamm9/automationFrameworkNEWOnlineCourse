@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class HomePage extends BasePage {
     public CareersPage getCareersPage() {
         return new CareersPage(driver);
@@ -335,5 +337,29 @@ public class HomePage extends BasePage {
 
     public WebElement checklv() {
         return getElementByXpath("//h1[contains(text(), 'Las Vegas Restaurants That Deliver & Takeout')]");
+    }
+
+    public WebElement getCart() {
+        return getElementByXpath("//div[@role='button']//img[contains(@alt, 'cart')]");
+    }
+
+    public WebElement getCartPopUp() {
+        return getElementByXpath("//div[@es-cart]");
+    }
+
+    public List<WebElement> cartPopUp() {
+        return getElementsByXpath("//div[@es-cart]");
+    }
+
+    public WebElement getSignIn() {
+        return getElementByXpath("//a[@id='menu-signin']");
+    }
+
+    public String getUrl() {
+        return driver.getCurrentUrl();
+    }
+
+    public WebElement getPartnerWithUs() {
+        return getElementByXpath("//a[contains(@class, 'partners')]");
     }
 }
