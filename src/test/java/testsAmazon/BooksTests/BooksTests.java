@@ -1,5 +1,6 @@
 package testsAmazon.BooksTests;
 
+import org.checkerframework.checker.units.qual.A;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjectsAmazon.BasketAmazonPage;
@@ -13,29 +14,28 @@ public class BooksTests extends TestInit {
     @Test
     public void checkAllElementsBooks() {
         HomePage homePage = new HomePage(driver);
+        BooksPage booksPage = new BooksPage(driver);
+        BooksInSpanishPage booksInSpanishPage = new BooksInSpanishPage(driver);
+        BasketAmazonPage basketAmazonPage = new BasketAmazonPage(driver);
         homePage.navigate();
         homePage.getBtnAllInHeader().click();
         homePage.getBtnBooks().click();
         homePage.getBtnSearch().click();
-        BooksPage booksPage = new BooksPage(driver);
 
-        sleep(3);
-        Assert.assertTrue(booksPage.getHeaderText().getText().contains("Popular in Books"));
+        Assert.assertEquals("Popular in Books", booksPage.getHeaderText().getText());
 
         booksPage.getLinkBooksInSpanish().click();
-        BooksInSpanishPage booksInSpanishPage = new BooksInSpanishPage(driver);
-
         sleep(3);
-        Assert.assertTrue(booksInSpanishPage.getHeaderText().getText().contains("Libros en Español"));
+//        assertEquals("text", driver.findElement(By.cssSelector(".title")).getText());
+        Assert.assertEquals("Libros en Español", booksInSpanishPage.getHeaderText().getText());
         sleep(3);
         Assert.assertTrue(driver.getTitle().contains("Libros"));
 
         booksInSpanishPage.getBasketBtn().click();
-        BasketAmazonPage basketAmazonPage = new BasketAmazonPage(driver);
 
         Assert.assertTrue(basketAmazonPage.getImg().isDisplayed());
-        Assert.assertTrue(basketAmazonPage.getBtnSell().getText().contains("Sell"));
-        waitTILLELelementContainsText("//a[@class='nav_a nav-swm-text nav-progressive-attribute nav-progressive-content']", "Shop Mother's Day Gifts");
-        Assert.assertTrue(basketAmazonPage.getBtnShopMothersDayGifts().getText().contains("Shop Mother's Day Gifts"));
+        Assert.assertEquals("Sell", basketAmazonPage.getBtnSell().getText());
+        waitTILLELelementContainsText("//a[@class='nav_a nav-swm-text nav-progressive-attribute nav-progressive-content']", "Shop Father's Day Gifts");
+        Assert.assertEquals("Shop Father's Day Gifts", basketAmazonPage.getBtnShopMothersDayGifts().getText());
     }
 }
