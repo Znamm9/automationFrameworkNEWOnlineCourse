@@ -28,4 +28,8 @@ public class CDsVinylPage extends BasePage {
     public WebElement getVinylBtn() {
         return getElementByXpath("//span[text()= 'Vinyl']");
     }
+
+    public WebElement getNewReleasesBtn() {
+        return getElementByXpath("//a[text()= 'New Releases']");
+    }
 }
