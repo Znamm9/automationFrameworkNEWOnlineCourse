@@ -11,6 +11,18 @@ public class AccessoriesAndSuppliesPage extends BasePage {
 
 
     public WebElement isResultsText() {
-       return getElementByXpath("//span[contains(text(), 'RESULTS')]");
+        return getElementByXpath("//span[contains(text(), 'RESULTS')]");
+    }
+
+    public WebElement getBtnAppleAirPods2() {
+        return getElementByXpath("//span[contains(text(), 'Apple AirPods (2nd Generation')]");
+    }
+
+    public WebElement getBtnAddToList() {
+        return getElementByXpath("//span[@id='wishListMainButton']");
+    }
+
+    public WebElement inDisplaySingIn() {
+        return getElementByXpath("//label[contains(text(), 'Email or mobile phone number')]");
     }
 }
