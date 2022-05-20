@@ -75,25 +75,30 @@ public class HomePage extends BasePage {
         return getElementByXpath("//span[text()= 'Hello, Bohdan']");
     }
 
+    public WebElement getBtnBooks() {
+        return getElementByXpath("//option[contains(text(), 'Books')]");
+    }
 
     public WebElement getBtnCameraPhoto() {
         return getElementByXpath("//a[contains(text(), 'Camera & Photo')]");
     }
-        public WebElement getSeeAllBtn() {
-            return getElementsByXpath("//div[text()= 'see all']").get(0);
-        }
 
-        public WebElement getToysAndGamesBtn() {
-            return getElementByXpath("//div[text()= 'Toys and Games']");
-        }
+    public WebElement getSeeAllBtn() {
+        return getElementsByXpath("//div[text()= 'see all']").get(0);
+    }
 
-        public WebElement getBuildingToysBtn() {
-            return getElementByXpath("//a[text()= 'Building Toys']");
-        }
+    public WebElement getToysAndGamesBtn() {
+        return getElementByXpath("//div[text()= 'Toys and Games']");
+    }
+
+
+    public WebElement getBuildingToysBtn() {
+        return getElementByXpath("//a[text()= 'Building Toys']");
+    }
 
 
     public void inputTextToSearch(String search) {
         getElementByXpath("//input[@id='twotabsearchtextbox']").sendKeys(search);
     }
-}
 
+}
