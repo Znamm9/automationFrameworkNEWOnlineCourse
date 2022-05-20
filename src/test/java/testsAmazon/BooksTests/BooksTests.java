@@ -1,6 +1,5 @@
 package testsAmazon.BooksTests;
 
-import org.checkerframework.checker.units.qual.A;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjectsAmazon.BasketAmazonPage;
@@ -25,10 +24,9 @@ public class BooksTests extends TestInit {
         Assert.assertEquals("Popular in Books", booksPage.getHeaderText().getText());
 
         booksPage.getLinkBooksInSpanish().click();
-        sleep(3);
-//        assertEquals("text", driver.findElement(By.cssSelector(".title")).getText());
+
+        waitTILLELelementContainsText("//b[text()='Libros en Español']", "Libros en Español");
         Assert.assertEquals("Libros en Español", booksInSpanishPage.getHeaderText().getText());
-        sleep(3);
         Assert.assertTrue(driver.getTitle().contains("Libros"));
 
         booksInSpanishPage.getBasketBtn().click();
