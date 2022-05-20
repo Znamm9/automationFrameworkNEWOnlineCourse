@@ -27,7 +27,7 @@ public class BooksTests extends TestInit {
 
         waitTILLELelementContainsText("//b[text()='Libros en Español']", "Libros en Español");
         Assert.assertEquals("Libros en Español", booksInSpanishPage.getHeaderText().getText());
-        Assert.assertTrue(driver.getTitle().contains("Libros"));
+        Assert.assertEquals("Amazon.com: Libros en español: Books", driver.getTitle());
 
         booksInSpanishPage.getBasketBtn().click();
 
