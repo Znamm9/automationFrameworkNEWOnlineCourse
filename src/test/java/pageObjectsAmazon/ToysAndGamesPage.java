@@ -23,7 +23,7 @@ public class ToysAndGamesPage extends BasePage {
         return getElementByXpath("//li[@id='p_89/LEGO']");
     }
 
-    public List<WebElement> isCustomerReviewUpList() {
+    public List<WebElement> getCustomerReviewUpList() {
         return getElementsByXpath("//span[text()= '& Up']");
     }
 }

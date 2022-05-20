@@ -70,6 +70,6 @@ public class TestsPartOne extends TestInit {
         ToysAndGamesPage toysAndGamesPage = new ToysAndGamesPage(driver);
         toysAndGamesPage.getLegoBtn().click();
 
-        Assert.assertEquals(toysAndGamesPage.isCustomerReviewUpList().size(),4);
+        Assert.assertEquals(toysAndGamesPage.isCustomerReviewUpList().size(), 4);
     }
 }
