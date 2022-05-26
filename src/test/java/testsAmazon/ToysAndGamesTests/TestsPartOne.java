@@ -60,4 +60,16 @@ public class TestsPartOne extends TestInit {
 
         Assert.assertTrue(checkUrlTrue("Harry+Potter"));
     }
+
+    @Test
+    public void testWizardingWorldHarryPotter() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://www.amazon.com/");
+        homePage.inputTextToSearch("Wizarding World Harry Potter\n");
+
+        ToysAndGamesPage toysAndGamesPage = new ToysAndGamesPage(driver);
+        toysAndGamesPage.getLegoBtn().click();
+
+        Assert.assertEquals(toysAndGamesPage.isCustomerReviewUpList().size(), 4);
+    }
 }
