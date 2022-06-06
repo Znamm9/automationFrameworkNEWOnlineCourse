@@ -101,4 +101,7 @@ public class HomePage extends BasePage {
         getElementByXpath("//input[@id='twotabsearchtextbox']").sendKeys(search);
     }
 
+    public WebElement getCategoryBook() {
+        return getElementByXpath("//option[text()='Books']");
+    }
 }

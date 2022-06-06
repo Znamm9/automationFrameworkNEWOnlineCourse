@@ -16,4 +16,12 @@ public class BooksPage extends BasePage {
     public WebElement getLinkBooksInSpanish() {
         return getElementByXpath("//a[text()='Books in Spanish']");
     }
+
+    public WebElement getInputInHeader() {
+        return getElementByXpath("//input[@id='twotabsearchtextbox']");
+    }
+
+    public WebElement getBtnSearch() {
+        return getElementByXpath("//input[@id='nav-search-submit-button']");
+    }
 }
