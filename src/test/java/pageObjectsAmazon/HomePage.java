@@ -75,6 +75,9 @@ public class HomePage extends BasePage {
         return getElementByXpath("//span[text()= 'Hello, Bohdan']");
     }
 
+    public WebElement getBtnBooks() {
+        return getElementByXpath("//option[contains(text(), 'Books')]");
+    }
 
     public WebElement getBtnCameraPhoto() {
         return getElementByXpath("//a[contains(text(), 'Camera & Photo')]");
@@ -87,6 +90,10 @@ public class HomePage extends BasePage {
     public WebElement getToysAndGamesBtn() {
         return getElementByXpath("//div[text()= 'Toys and Games']");
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> eeac361f10465e187442adfe7cd21833952c2988
 
     public WebElement getBuildingToysBtn() {
         return getElementByXpath("//a[text()= 'Building Toys']");
@@ -96,7 +103,11 @@ public class HomePage extends BasePage {
     public void inputTextToSearch(String search) {
         getElementByXpath("//input[@id='twotabsearchtextbox']").sendKeys(search);
     }
+<<<<<<< HEAD
 
 
 }
+=======
+>>>>>>> eeac361f10465e187442adfe7cd21833952c2988
 
+}
