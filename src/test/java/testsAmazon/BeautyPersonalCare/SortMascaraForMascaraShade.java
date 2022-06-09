@@ -17,5 +17,7 @@ public class SortMascaraForMascaraShade extends TestInit {
         for (int i = 4; i <= 10; i += 4) {
             mascaraPage.getSortBtn().get(i).click();
         }
+
+        Assert.assertTrue(mascaraPage.getSortBtn().size()>0);
     }
 }
