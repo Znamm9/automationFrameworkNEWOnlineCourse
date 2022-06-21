@@ -49,8 +49,8 @@ public class CheckDepartmentOfChildrenMusic______PLUS_____TEST extends TestInit 
 
     @Test
     public void Trykutnik() {
-        String a = "*";
-        String b = ".";
+        String a = "\\";
+        String b = "*";
 
         for (int c = 0; c < 10; c++) {
             System.out.println(a);
