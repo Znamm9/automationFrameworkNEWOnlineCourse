@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageObjects.BasePage;
 
+import java.util.List;
+
 public class CDsVinylPage extends BasePage {
     public CDsVinylPage(WebDriver driver) {
         super(driver);
@@ -27,5 +29,25 @@ public class CDsVinylPage extends BasePage {
 
     public WebElement getVinylBtn() {
         return getElementByXpath("//span[text()= 'Vinyl']");
+    }
+
+    public WebElement getSortBtn() {
+        return getElementByXpath("//span[@id='a-autoid-0-announce']");
+    }
+
+    public WebElement getSortByPriceLowToHighBtn() {
+        return getElementByXpath("//a[@id='s-result-sort-select_1']");
+    }
+
+    public List<WebElement> queenVinylResults() {
+        return getElementsByXpath("//span[@class='a-size-medium a-color-base a-text-normal'][contains(text(), 'Queen')]");
+    }
+
+    public WebElement getFolkBtn() {
+        return getElementByXpath("//span[contains(text(), 'Folk')][contains(@class, 'a-size-med')]");
+    }
+
+    public List<WebElement> checkCategoriesOfFolkMusic() {
+        return getElementsByXpath("//div[@class='a-section octopus-pc-category-card-v2-category']");
     }
 }

@@ -6,18 +6,18 @@ import pageObjectsAmazon.CDsVinylPage;
 import pageObjectsAmazon.HomePage;
 import tests.TestInit;
 
-public class CheckDepartmentOfChildrenMusic extends TestInit {
+public class CheckListOfFeaturedCategories extends TestInit {
 
     @Test
-    public void checkDepartmentOfChildrenMusic() {
+    public void checkListOfFeaturedCategories() {
         HomePage homePage = new HomePage(driver);
-        openUrl("https://www.amazon.com/ref=nav_logo");
+        homePage.navigate();
         homePage.getBtnAllInHeader().click();
-        homePage.getBtnMusicCDsVinyl().click();
-        homePage.getBtnSearch().click();
+        homePage.inputTextToSearch("Queen vinyl\n");
         CDsVinylPage cDsVinylPage = new CDsVinylPage(driver);
-        cDsVinylPage.childrenMusicBtn().click();
+        cDsVinylPage.getSortBtn().click();
+        cDsVinylPage.getSortByPriceLowToHighBtn().click();
 
-        Assert.assertTrue(checkUrlTrue("childrens"));
+        Assert.assertEquals(cDsVinylPage.queenVinylResults().size(), 0);
     }
 }
