@@ -91,14 +91,11 @@ public class HomePage extends BasePage {
         return getElementByXpath("//div[text()= 'Toys and Games']");
     }
 
-
     public WebElement getBuildingToysBtn() {
         return getElementByXpath("//a[text()= 'Building Toys']");
     }
 
-
     public void inputTextToSearch(String search) {
         getElementByXpath("//input[@id='twotabsearchtextbox']").sendKeys(search);
     }
-
 }

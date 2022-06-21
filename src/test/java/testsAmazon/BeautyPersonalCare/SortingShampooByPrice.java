@@ -20,3 +20,4 @@ public class SortingShampooByPrice extends TestInit {
         Assert.assertTrue(checkUrlTrue("price-asc-rank&qid"));
     }
 }
+
