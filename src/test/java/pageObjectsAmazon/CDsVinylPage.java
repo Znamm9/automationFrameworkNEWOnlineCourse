@@ -42,4 +42,12 @@ public class CDsVinylPage extends BasePage {
     public List<WebElement> queenVinylResults() {
         return getElementsByXpath("//span[@class='a-size-medium a-color-base a-text-normal'][contains(text(), 'Queen')]");
     }
+
+    public WebElement getFolkBtn() {
+        return getElementByXpath("//span[contains(text(), 'Folk')][contains(@class, 'a-size-med')]");
+    }
+
+    public List<WebElement> checkCategoriesOfFolkMusic() {
+        return getElementsByXpath("//div[@class='a-section octopus-pc-category-card-v2-category']");
+    }
 }

@@ -37,7 +37,7 @@ public class CheckDepartmentOfChildrenMusic______PLUS_____TEST extends TestInit 
             System.out.print(name.charAt(i));
         }
 
-        String a = name.substring(0,5);
+        String a = name.substring(0, 5);
         String b = name.substring(5);
         String c = String.valueOf(a.equals(b));
         System.out.println("\n" + c);
@@ -72,7 +72,7 @@ public class CheckDepartmentOfChildrenMusic______PLUS_____TEST extends TestInit 
     @Test
     public void Reverse() {
         String name = "Yuriy Cherniak";
-        String name1 = name.substring(0,5);
+        String name1 = name.substring(0, 5);
         String name2 = name.substring(5);
 
         for (int a = name1.length() - 1; a >= 0; a--) {

@@ -35,14 +35,14 @@ public class TestInit {
     @BeforeMethod
     public void setUp() {
         WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
 
-    @AfterMethod
-    public void after() {
-        driver.quit();
-    }
+//    @AfterMethod
+//    public void after() {
+//        driver.quit();
+//    }
 
     int BASIC_TIME = 15;
 
